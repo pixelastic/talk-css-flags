@@ -1,0 +1,84 @@
+/* Contact */
+.reveal .contact {
+  font-size:6rem;
+  text-align:center;
+  font-weight:bold;
+  text-shadow:3px 4px 5px rgba(0,0,0,0.75)
+}
+.reveal .contact .part {
+  display:inline-block;
+  position:relative;
+}
+/* Text */
+.reveal .contact .part:after {
+  content:attr(name);
+  position:absolute;
+  display:block;
+  right:0;
+  left:0;
+  text-align:center;
+  font-size:2.25rem;
+  font-weight:normal;
+}
+.reveal .contact .part-above:after {
+  top:-4rem;
+}
+.reveal .contact .part-below:after {
+  bottom:-5.5rem;
+}
+
+/* Rules */
+.reveal .contact .part:before {
+  content:"";
+  position:absolute;
+  display:block;
+  right:0;
+  left:0;
+  border:3px solid white;
+  height:10px;
+}
+.reveal .contact .part-above:before {
+  border-bottom:1px solid transparent;
+  top:-1rem;
+}
+.reveal .contact .part-below:before {
+  border-top:1px solid transparent;
+  bottom:-2.5rem;
+}
+
+/* Specific alignment */
+.reveal .contact .part-twitter:before {
+  left:-4rem;
+}
+.reveal .contact .part-twitter:after {
+  left:-3rem;
+}
+.reveal .contact .part-mail:before {
+  bottom:-5rem;
+}
+.reveal .contact .part-mail:after {
+  bottom:-8rem;
+  left:-3rem;
+}
+
+
+/* List of credits */
+.reveal .list-credits {
+  position: fixed;
+  top: 17rem;
+  list-style:none;
+}
+.reveal .list-credits li {
+  float:left;
+  width: 50%;
+}
+.reveal .list-credits a {
+  color: #FFF;
+  display: block;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 0.5rem;
+}
+
+
+

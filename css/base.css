@@ -1,0 +1,38 @@
+body {
+  background-color: #90A959;
+  color: #E9EEDE;
+}
+.reveal {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+}
+.reveal a {
+  color: #AC4142;
+  text-decoration: none;
+}
+.reveal a:hover {
+  text-shadow: none;
+  border: none;
+}
+.reveal section {
+  text-align:left; 
+}
+.reveal ul,
+.reveal ol {
+  list-style-position: inside;
+  margin: 0;
+}
+
+.reveal .list-no-bullet {
+  list-style:none;
+  margin-left:0;
+}
+.reveal .image-center {
+  display: block;
+  margin: 0 auto;
+}
+.reveal .image-icon {
+  height: 1em;
+}
+

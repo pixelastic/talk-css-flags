@@ -1,0 +1,63 @@
+/* Links */
+
+
+/* Lists */
+.reveal ul, 
+.reveal ol {
+  min-width:600px;
+  margin:0 auto 20px auto;
+}
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  font-size:0.8em;
+}
+
+.reveal blockquote {
+  margin-bottom:20px;
+  padding:20px;
+}
+
+.reveal strong {
+  color:#87C868;
+}
+.reveal em {
+  font-size:0.9em;
+  font-style:normal;
+  color:#a3adb2;
+}
+
+.reveal pre {
+  background:#000000;
+  color:#FFFFFF;
+}
+.reveal code {
+  background:#3F3F3F;
+  color:#DCDCDC;
+  padding:0.2em 0.5em;
+  font-size:0.8em;
+}
+.reveal pre code {
+  font-size:inherit;
+}
+.reveal code.cropped {
+  text-overflow:ellipsis;
+  overflow:hidden;
+  word-wrap:normal;
+}
+.reveal code.expanded {
+  word-wrap:break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+

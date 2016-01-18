@@ -1,0 +1,21 @@
+/* Grid */
+.reveal .row {
+  overflow:hidden;
+}
+.reveal .row .column {
+  float:left;
+}
+.reveal .row h3,
+.reveal .row h4 {
+  text-align:left;
+}
+.reveal .row ul {
+  min-width:0px;
+}
+.reveal .col2 .column {
+  width:50%;
+}
+.reveal .col3 .column {
+  width:33%;
+}
+

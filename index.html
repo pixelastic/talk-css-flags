@@ -1,40 +1,106 @@
-# talk-css-flags
+<!doctype html>
+<html lang="en">
 
-CSS, Compagnonnage et Vexillolie
+<head>
+  <meta charset="utf-8">
+  <title>CSS, Compagnonnage et Vexillologie</title>
+  <meta name="description" content="HumanTalks Paris 2015">
+  <meta name="author" content="Timothée Carry">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./css/reveal.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/headings.css">
+  <link rel="stylesheet" href="./css/navigation.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./lib/css/zenburn.css">
+  <!--[if lt IE 9]>
+    <script src="./lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
 
-## Histoire
+<body>
+  <div class="reveal">
+    <div class="slides">
 
-Je suis allé à Tours il y a quelques mois
-J'ai visité le musée du Compagnonnage
-J'ai vu des chefs-d'œuvres
-C'est d'ailleurs de là que viens le mot chef d'œuvre
-La plus belle œuvre que puisse faire un compagnon de sa vie
-Il y passe des années entières
-Il utilise toutes les techniques maitrisées à la perfection
-Pour quelque chose qui n'est finalement même pas utile
-C'est juste un tour de force de ce qu'il est possible de faire
+      <!--HOME-->
+      <section data-background="./img/intro.jpg">
+        <h1>CSS, Compagnonnage et Vexillologie</h1>
+      </section>
 
-J'y ai vu beaucoup de parallelles avec le développement logiciel
-Surtout le software craftmanship
-Ou on voit le code comme un art, comme un craft
-On veut le faire du mieux possible
-On apprends de nos maitres, on enseigne à nos disciples
+      <!--WHO AM I-->
+      <section>
+        <h2>Timothée Carry</h2>
+        <ul>
+          <li>Développeur <a href="https://www.algolia.com/">@Algolia</a></li>
+          <li><a href="https://twitter.com/pixelastic/">@pixelastic</a></li>
+        </ul>
+      </section>
 
-Je fais du CSS depuis plusieurs années
-Je suis assez à l'aise dedans
-J'aime le coté puzzle à résoudre pour réussir à reproduire une maquette
-Jouer avec le markup, essayer de le garder le plus simple possible et fluide
+      <!--COMPAGNONNAGE-->
+      <section data-background="./img/compagnonnage.jpg">
+        <h2>Compagnonnage</h2>
+        <!--Musée de Tours-->
+      </section>
 
-Je me suis donc lancé le défi de reproduire l'ensemble des drapeaux des pays du
-monde en CSS
-Mais la tache me paraissait encore trop à ma portée
-Trop dans ma zone de confort
-Du coup je me suis mis la règle de n'utiliser qu'un seul div par drapeau
-Je ne savais pas si j'allais y arriver avant de commencer
-Mais j'ai appris beaucoup de choses en chemin
+      <section data-background="./img/compagnonnage-green.jpg">
+        <h2>Chef d'œuvre</h2>
+        <ul>
+          <li>Tour de force</li>
+          <li>Maitrise et perfection</li>
+          <li>Découverte</li>
+          <li>Aucune application</li>
+        </ul>
+        <!--OEuvre majeure-->
+        <!--Plusieurs années-->
+      </section>
 
-## Drapeaux
+      <!--Idem en dev-->
+      <!--Software Craftmanship-->
+      <!--Faire le mieux possible-->
+      <!--Apprendre des maitres, enseigner aux disciples-->
 
+      <!--CSS-->
+      <section data-background="./img/css.jpg">
+        <h2>CSS</h2>
+      </section>
+
+      <section data-background="./img/css-green.jpg">
+        <h2>Expérience</h2>
+        <ul>
+          <li>10+ années de pratique</li>
+          <li>Puzzle à résoudre</li>
+          <li>Markup minimal</li>
+        </ul>
+      </section>
+
+      <section data-background="./img/css-green.jpg">
+        <h2>Challenge</h2>
+        <blockquote>
+          Faire l'ensemble des drapeaux des pays du monde en CSS, avec un seul `div` par drapeau.
+        </blockquote>
+      </section>
+
+      <!--VEXILLOLOGIE-->
+      <section data-background="./img/vexillologie.jpg">
+        <h2>Vexillologie</h2>
+      </section>
+
+      <section data-background="./img/vexillologie-green.jpg">
+        <h2>Étude des drapeaux</h2>
+        <ul>
+          <li>Ratios</li>
+          <li>Couleurs</li>
+          <li>Jargon</li>
+        </ul>
+        <p>
+          Vexilla Mundi, CRWFlags
+        </p>
+      </section>
+
+      <section>
 ### Tricolore
 
 J'ai commencé par les plus simples
@@ -52,6 +118,9 @@ J'ai commencé par les plus simples
 Fun: Montrer les drapeaux qui sont les mêmes, comme quoi c'est facile à faire.
 
 CSS: Border-left, border-right, et une couleur au milieu
+      </section>
+
+      <section>
 
 ### Tricolore horizontal
 
@@ -77,14 +146,18 @@ différentes
 Colombia... Une bande est plus large que les autres
 
 CSS: border-top, border-bottom et une couleur au milieu
+      </section>
 
-### 2 Bandes
+      <section>
+        ## 2 Bandes
 
 Monaco
 Ukraine
 Poland
+</section>
 
-### Plus de bandes
+<section>
+  ## Plus de bandes
 
 Botswana
 Costa Rica
@@ -96,7 +169,9 @@ borders ne marche pas
 Je découvre les background-gradient
 et je peux faire des gradients "pleins"
 Je peux faire autant de lignes que je veux
+</section>
 
+<section>
 ### Horizontal et vertical
 
 Je peux mixer les bandes horizontales et verticales
@@ -107,7 +182,9 @@ En jouant correctement, je peux faire des formes plus complexes
 Benin
 Madagascar
 United Arab Emirates
+</section>
 
+<section>
 ### Croix
 
 En mettant un background et en tracant des lignes, je peux aussi faire des croix
@@ -122,7 +199,9 @@ Norway
 Iceland
 
 J'ai appris que cela s'appelle la Croix Nordique
+</section>
 
+<section>
 ### Ronds
 
 Pour faire des ronds on a deux techniques
@@ -134,7 +213,9 @@ Japan
 Bangladesh
 Laos
 Palau
+</section>
 
+<section>
 ### Symbols
 
 Pour des symboles un peu complexes, je me suis permit de "tricher" et d'utiliser
@@ -175,9 +256,12 @@ Mongolia
 Morocco
 Myanmar
 Senegal
+</section>
 
 
 
+
+<section>
 ### Croissants
 
 Un croissant de lune n'est rien d'autre qu'une eclipse partielle
@@ -194,7 +278,10 @@ Singapore
 Tunisia
 Turkey
 Western Sahara
+</section>
 
+
+<section>
 ### Triangles
 
 Au début j'ai utilisé la technique classique des borders top-bottom et du width
@@ -221,6 +308,9 @@ Ou plus compliqué, si je découpe plusieurs fois
 Bahrain
 Qatar
 
+</section>
+
+<section>
 ### Stripes
 
 Plein de gradients, dans le bon ordre
@@ -228,7 +318,10 @@ Plein de gradients, dans le bon ordre
 USA
 Liberia
 Malaysia
+</section>
 
+
+<section>
 ### Diagonales
 
 Avec un poil de trigo, on peut faire des gradients en diagonal, ps que
@@ -252,7 +345,10 @@ formes complexes
 Guyana
 Saint Lucia
 Timor
+</section>
 
+
+<section>
 ### Box size sur un gradient
 
 Par défaut un gradient va d'un bout à l'autre du div parent. Il est possible de
@@ -261,8 +357,11 @@ sur les formes.
 Rarement utilisé, mais quand j'en ai eu besoin, je ne pouvais pas faire sans.
 
 Greece
+</section>
 
 
+
+<section>
 ### Plusieurs symbols
 
 Pour ça on utilise la même technique que pour un seul symbole, mais on le place
@@ -270,7 +369,10 @@ en haut à gauche, transparent
 Et on utilise les text-shadow pour placer les différentes étoiles.
 
 Micronesia
+</section>
 
+
+<section>
 ### Cercles d'étoiles
 
 Même technique que pour plusieurs symbols mais on mets un symbole transparent au
@@ -280,16 +382,22 @@ Cape Verde
 China
 Venezuala
 Cook Island
+</section>
 
 
+
+<section>
 ### Plein de tecniques
 
 Comoros
+</section>
 
 
 
 
 
+
+<section>
 ### Speciaux
 
 Algéria
@@ -300,38 +408,11 @@ Jamaica: fond noir, overlay avec jaune et vert, et coupage dans le jaune en clip
 Kuwait: border simplement
 New Zealand
 South Africa
+</section>
 
 
 
-
-
-
-### Mega trick
-
-
-
-
-
-
-
-
-
-
-
-
-### Ratios & Couleurs
-
-Je me suis rendu compte que tous les drapeaux n'ont pas le même ration
-longueur/largeur
-La majorité sont en 2:3 mais certains ont des ratios complétément différents
-
-Besoin aussi de trouver la bonne teinte de couleur. Certains son définis en
-Pantone, d'autres en RGB, d'autres pas du tout.
-
-Vexilla Mundi
-CRWFlags
-pantone2hex
-
+<section>
 ### Trigonométrie
 
 Pas très compliqué
@@ -340,9 +421,12 @@ Fonctions cos/sin/tan pas dispos dans SCSS
 Mais dispos dans Ruby
 Possibilité d'étendre SCSS pour lui faire loader du Ruby
 Drawback: pas de libcss qui est plus fast
+</section>
 
 
 
+
+<section>
 # Conclusion
 
 Je suis parti en me disant que je savais faire du CSS
@@ -363,8 +447,11 @@ d'en faire encore plus et explorer là où personne n'est allé
 Comme les chef-d'œuvre dont je parlais au début, tout ceci n'as pas d'utilité
 Cela ne doit pas être utilisé en production, c'est juste un moyen pour moi de
 découvrir jusqu'où je peux aller en CSS
+</section>
 
 
+
+<section>
 CSS, Compagnonnage et Vexillologie
 
 CSS Flags (https://pixelastic.github.io/css-flags/) est un projet un peu fou de
@@ -375,5 +462,77 @@ Tim Carry nous présentera dans ce talk les techniques pour utiliser un unique
 `div` au maximum de ces capacités. Nous verrons aussi pourquoi des projets de ce
 genre sont importants.
 
+</section>
 
+
+
+
+
+
+
+
+
+
+      <!--QUESTIONS-->
+      <section data-background="./img/questions.jpg">
+        <div class="contact">
+          <div class="part part-below part-mail" name="email">tim@<div class="part part-above part-website" name="website"><div class="part part-below part-twitter" name="twitter">pixelastic</div>.com</div></div>
+        </div>
+        <ul class="list-credits">
+          <li><a href="https://unsplash.com/photos/30DvSYNF2F4">https://unsplash.com/photos/30DvSYNF2F4</a></li>
+          <li><a href="http://finda.photo/image/10658">http://finda.photo/image/10658</a></li>
+          <li><a href="https://unsplash.com/photos/Xo3uIN_Q1Y0">https://unsplash.com/photos/Xo3uIN_Q1Y0</a></li>
+          <li><a href="http://finda.photo/image/5870">http://finda.photo/image/5870</a></li>
+          <li><a href="https://unsplash.com/photos/h0Vxgz5tyXA">https://unsplash.com/photos/h0Vxgz5tyXA</a></li>
+        </ul>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="./lib/js/head.min.js"></script>
+  <script src="./js/reveal.js"></script>
+
+  <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: false,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'linear',
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [{
+        src: './lib/js/classList.js',
+        condition: function() {
+          return !document.body.classList;
+        }
+      }, {
+        src: './plugin/highlight/highlight.js',
+        async: true,
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: './plugin/notes/notes.js',
+        async: true,
+        condition: function() {
+          return !!document.body.classList;
+        }
+      }]
+    });
+  </script>
+  <!--
+    Image sources
+    Flags: https://www.flickr.com/photos/natematias/22132909/in/photostream/
+    CSS is awesome: http://bethesignal.org/blog/2009/06/13/truly-css-is-awesome/
+    
+    -->
+</body>
+
+</html>
 

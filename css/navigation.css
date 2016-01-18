@@ -1,0 +1,40 @@
+/* Progress bar */
+
+.reveal .progress {
+  height: 20px;
+}
+.reveal .progress span {
+  height: 20px;
+  background: #E9EEDE;
+}
+/* Navigation */
+
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #04568C;
+}
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #04568C;
+}
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #04568C;
+}
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #04568C;
+}
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #00A2D8;
+}
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #00A2D8;
+}
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #00A2D8;
+}
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #00A2D8;
+}
+
