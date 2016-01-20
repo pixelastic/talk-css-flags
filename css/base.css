@@ -4,7 +4,7 @@ body {
 }
 .reveal {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-weight: normal;
 }
 .reveal a {
@@ -15,6 +15,9 @@ body {
   text-shadow: none;
   border: none;
 }
+.reveal pre {
+  font-size: 2rem;
+}
 .reveal section {
   text-align:left; 
 }
@@ -23,10 +26,19 @@ body {
   list-style-position: inside;
   margin: 0;
 }
+.reveal blockquote {
+  font-size: 3rem;
+  line-height: 1.2em;
+  padding: 2rem;
+}
 
 .reveal .list-no-bullet {
   list-style:none;
   margin-left:0;
+}
+.reveal .list {
+  font-size: 3rem;
+  line-height: 1.5em;
 }
 .reveal .image-center {
   display: block;

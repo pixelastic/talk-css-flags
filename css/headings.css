@@ -23,11 +23,15 @@
 }
 
 .reveal h1 {
-  font-size: 3em;
   text-shadow: 4px 4px 2px #313131;
   text-align:center;
 }
 .reveal h2 {
+  font-size: 6rem;
   text-align:center;
+}
+.reveal h3 {
+  font-size: 4rem;
+  margin-bottom: 10px;
 }
 

@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="./css/headings.css">
   <link rel="stylesheet" href="./css/navigation.css">
   <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/flags-layout.css">
+  <link rel="stylesheet" href="./css/flags.css">
   <link rel="stylesheet" href="./lib/css/zenburn.css">
   <!--[if lt IE 9]>
     <script src="./lib/js/html5shiv.js"></script>
@@ -27,13 +29,13 @@
 
       <!--HOME-->
       <section data-background="./img/intro.jpg">
-        <h1>CSS, Compagnonnage et Vexillologie</h1>
+        <h2>CSS, Compagnonnage et Vexillologie</h2>
       </section>
 
       <!--WHO AM I-->
       <section>
         <h2>Timothée Carry</h2>
-        <ul>
+        <ul class="list">
           <li>Développeur <a href="https://www.algolia.com/">@Algolia</a></li>
           <li><a href="https://twitter.com/pixelastic/">@pixelastic</a></li>
         </ul>
@@ -47,7 +49,7 @@
 
       <section data-background="./img/compagnonnage-green.jpg">
         <h2>Chef d'œuvre</h2>
-        <ul>
+        <ul class="list">
           <li>Tour de force</li>
           <li>Maitrise et perfection</li>
           <li>Découverte</li>
@@ -69,7 +71,7 @@
 
       <section data-background="./img/css-green.jpg">
         <h2>Expérience</h2>
-        <ul>
+        <ul class="list">
           <li>10+ années de pratique</li>
           <li>Puzzle à résoudre</li>
           <li>Markup minimal</li>
@@ -79,7 +81,7 @@
       <section data-background="./img/css-green.jpg">
         <h2>Challenge</h2>
         <blockquote>
-          Faire l'ensemble des drapeaux des pays du monde en CSS, avec un seul `div` par drapeau.
+          Faire l'ensemble des drapeaux des pays du monde en CSS, avec un seul <code>div</code> par drapeau.
         </blockquote>
       </section>
 
@@ -90,7 +92,7 @@
 
       <section data-background="./img/vexillologie-green.jpg">
         <h2>Étude des drapeaux</h2>
-        <ul>
+        <ul class="list">
           <li>Ratios</li>
           <li>Couleurs</li>
           <li>Jargon</li>
@@ -100,76 +102,326 @@
         </p>
       </section>
 
+      <!--TRICOLORES-->
       <section>
-### Tricolore
-
-J'ai commencé par les plus simples
-- France
-- Italie
-- Belgique
-- Cote d'Ivoire
-- Guinea
-- Ireland
-- Mali
-- Peru
-- Chad
-- Roumanie
-
-Fun: Montrer les drapeaux qui sont les mêmes, comme quoi c'est facile à faire.
-
-CSS: Border-left, border-right, et une couleur au milieu
+        <h3>Tricolores</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__fra"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">France</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__gin"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Guinea</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mli"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Mali</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__bel"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Belgium</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__per"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Peru</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__nga"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Nigeria</strong>
+          </li>
+        </ul>
       </section>
 
       <section>
-
-### Tricolore horizontal
-
-- Austria
-- Armenia
-- Bolivia
-- Bulgaria
-- Estonia
-- Gabon
-- Germany
-- Hungary
-- Latvia
-- Lithuania
-- Luxembourg
-- Netherlands
-- Russian federation
-- Sierra Leone
-- Yemen
-
-Séparer ceux avec exactement trois bandes identiques, et ceux avec de tailles
-différentes
-
-Colombia... Une bande est plus large que les autres
-
-CSS: border-top, border-bottom et une couleur au milieu
+        <h3>Tricolores</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__ita"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Italy</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__irl"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Ireland</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__civ"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Côte d'Ivoire</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__rou"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Romania</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tcd"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Chad</strong>
+          </li>
+        </ul>
       </section>
 
       <section>
-        ## 2 Bandes
+        <div class="c-flag c-flag__fra"></div>
+        <pre><code>
+          width: 100px;
+          border-left: 100px solid blue;
+          border-right: 100px solid red;
+          background: white;
+        </code></pre>
+      </section>
 
-Monaco
-Ukraine
-Poland
-</section>
+      <!--TRIBANDES-->
+      <section>
+        <h3>Tribandes</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__hun"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Hungary</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__lux"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Luxembourg</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__nld"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Netherlands</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__col"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Colombia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__lva"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Latvia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__aut"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Austria</strong>
+          </li>
+        </ul>
+      </section>
 
-<section>
-  ## Plus de bandes
+      <section>
+        <div class="c-flag c-flag__nld"></div>
+        <pre><code>
+          height: 75px;
+          border-top: 75x solid red;
+          border-right: 75px solid blue;
+          background: white;
+        </code></pre>
+      </section>
 
-Botswana
-Costa Rica
-Gambia
-Mauritius
-Thailand
+      <!--BICOLORES-->
+      <section>
+        <h3>Bicolores</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__ukr"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Ukraine</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__pol"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Poland</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mco"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Monaco</strong>
+          </li>
+        </ul>
+      </section>
 
-borders ne marche pas
-Je découvre les background-gradient
-et je peux faire des gradients "pleins"
-Je peux faire autant de lignes que je veux
-</section>
+      <!--OUT OF COMFORT ZONE-->
+      <section data-background="./img/comfort-zone.png"></section>
+
+      <!--MORE-->
+      <section>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__dza"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Algeria</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__usa"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">United States</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__nzl"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">New Zealand</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__kor"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Korea (South)</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__jam"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Jamaica</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__bih"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Bosnia and Herzegovina</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--PLUS DE BANDES-->
+      <section>
+        <h3>Plus de bandes</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__bwa"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Botswana</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__gmb"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Gambia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mus"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Mauritius</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tha"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Thailand</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__cri"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Costa Rica</strong>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="c-flag c-flag__mus"></div>
+        <pre><code>
+        linear-gradient(180deg, 
+          transparent, transparent 0, 
+          #ee2737 0, #ee2737 36.75px, 
+          transparent 36.75px, transparent 100%)
+        </code></pre>
+      </section>
 
 <section>
 ### Horizontal et vertical
