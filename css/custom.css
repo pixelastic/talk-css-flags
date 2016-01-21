@@ -1,5 +1,25 @@
-/* .reveal .sprites h1, */
-/* .reveal .sprites h3 { */
-/*   text-shadow: 4px 4px 2px black; */
-/*  */
-/* } */
+.trigo .list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.reveal .construction_sheet {
+  width: 700px;
+  margin: 0 auto;
+  display: block;
+  background: white;
+}
+
+.reveal .trigo-code pre {
+  font-size: 1.6rem;
+}
+
+.reveal .uk .c-flag__gbr {
+  transform: scale(8);
+}
+
+.reveal .real_flag {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}

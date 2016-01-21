@@ -15,9 +15,10 @@
   <link rel="stylesheet" href="./css/headings.css">
   <link rel="stylesheet" href="./css/navigation.css">
   <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/custom.css">
   <link rel="stylesheet" href="./css/flags-layout.css">
   <link rel="stylesheet" href="./css/flags.css">
-  <link rel="stylesheet" href="./lib/css/zenburn.css">
+  <link rel="stylesheet" href="./css/highlight.css">
   <!--[if lt IE 9]>
     <script src="./lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -205,7 +206,7 @@
 
       <section>
         <div class="c-flag c-flag__fra"></div>
-        <pre><code>
+        <pre><code class="language-css">
           width: 100px;
           border-left: 100px solid blue;
           border-right: 100px solid red;
@@ -270,7 +271,7 @@
 
       <section>
         <div class="c-flag c-flag__nld"></div>
-        <pre><code>
+        <pre><code class="language-css">
           height: 75px;
           border-top: 75x solid red;
           border-right: 75px solid blue;
@@ -350,10 +351,10 @@
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
               <div class="c-flaglist--showcase-inner">
-                <div class="c-flag c-flag__jam"></div>
+                <div class="c-flag c-flag__bdi"></div>
               </div>
             </div>
-            <strong class="c-flaglist--name">Jamaica</strong>
+            <strong class="c-flaglist--name">Burundi</strong>
           </li>
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
@@ -415,268 +416,982 @@
 
       <section>
         <div class="c-flag c-flag__mus"></div>
-        <pre><code>
-        linear-gradient(180deg, 
-          transparent, transparent 0, 
-          #ee2737 0, #ee2737 36.75px, 
-          transparent 36.75px, transparent 100%)
+        <pre><code class="language-css">
+  background-image: linear-gradient(180deg, 
+    transparent 0px, transparent 37px, 
+    blue 37px, blue 74px, 
+    transparent 74px, transparent 100%)
         </code></pre>
       </section>
 
-<section>
-### Horizontal et vertical
-
-Je peux mixer les bandes horizontales et verticales
-Les premieres dans l'ordre viennent au premier plan
-Puis sur des layers de plus en plus profonds
-En jouant correctement, je peux faire des formes plus complexes
-
-Benin
-Madagascar
-United Arab Emirates
-</section>
-
-<section>
-### Croix
-
-En mettant un background et en tracant des lignes, je peux aussi faire des croix
-
-Sweden
-Switzerland
-Aland Islands
-England
-Finland
-Faroe Islands
-Norway
-Iceland
-
-J'ai appris que cela s'appelle la Croix Nordique
-</section>
-
-<section>
-### Ronds
-
-Pour faire des ronds on a deux techniques
-Soit un radial background. Pratique et simple.
-
-Ruses: Soit un pseudo-element en position absolute avec border-radius 50%.
-
-Japan
-Bangladesh
-Laos
-Palau
-</section>
-
-<section>
-### Symbols
-
-Pour des symboles un peu complexes, je me suis permit de "tricher" et d'utiliser
-une webfont.
-J'ai utilisé icomoon pour crafter une fond sur mesure
-L'avantage étant en SVG c'est que je peux choisir la taille et la couleur
-
-Vietnam
-Albania
-Kyrgyzstan
-Hong Kong
-Saudi Arabia
-SOmalia
-
-Burkina Faso
-Cameroon
-Chile
-Ghana
-Guinée Bissau
-Honduras
-North Korea
-
-Albanie
-Barbados
-Canada
-Egypt
-Ethiopia
-Georgia
-Hong Kong
-Iraq
-Israel
-Jordanie
-Kyrgyzstan
-Lebanon
-Lesotho
-Guernsey
-Mongolia
-Morocco
-Myanmar
-Senegal
-</section>
-
-
-
-
-<section>
-### Croissants
-
-Un croissant de lune n'est rien d'autre qu'une eclipse partielle
-Il suffit de mettre deux ronds l'un devant l'autre
-je sais faire des ronds, je sais donc faire des croissants.
-
-Azerbaijan
-Libya
-Malaysia
-Maldives
-Mauritania
-Pakistan
-Singapore
-Tunisia
-Turkey
-Western Sahara
-</section>
-
-
-<section>
-### Triangles
-
-Au début j'ai utilisé la technique classique des borders top-bottom et du width
-0 pour faire un triangle à droite
-Mais ça devenait compliqué quand je devais placer aussi un symbole dedans,
-à cause du width 0
-J'ai donc trouvé la solution du clip-path qui me permet de dessiner un rectangle
-et de couper dedans pour n'en afficher qu'une partie
-
-Bahamas
-Cuba
-Czech Republic
-Djibouti
-Jordanie
-Philippines
-Puerto Rico
-Sao Tome & Principe
-South Sudan
-Sudan
-
-
-Ou plus compliqué, si je découpe plusieurs fois
-
-Bahrain
-Qatar
-
-</section>
-
-<section>
-### Stripes
-
-Plein de gradients, dans le bon ordre
-
-USA
-Liberia
-Malaysia
-</section>
-
-
-<section>
-### Diagonales
-
-Avec un poil de trigo, on peut faire des gradients en diagonal, ps que
-horizontal ou vertical. Ça permet de faire des coupes plus complexes
-
-Eritrea
-French Guiana
-Marshall Islands
-Namibia
-Saint Kitts And nevis
-Scottland
-Seychelles
-Solomon Islands
-Tanzania
-Trinidad et Tobago
-
-
-Idem que pour les autres, en les superposant correctement on peut faire des
-formes complexes
-
-Guyana
-Saint Lucia
-Timor
-</section>
-
-
-<section>
-### Box size sur un gradient
-
-Par défaut un gradient va d'un bout à l'autre du div parent. Il est possible de
-le conscrire à un plus petit rectangle, ce qui permet d'avoir plus de controle
-sur les formes.
-Rarement utilisé, mais quand j'en ai eu besoin, je ne pouvais pas faire sans.
-
-Greece
-</section>
-
-
-
-<section>
-### Plusieurs symbols
-
-Pour ça on utilise la même technique que pour un seul symbole, mais on le place
-en haut à gauche, transparent
-Et on utilise les text-shadow pour placer les différentes étoiles.
-
-Micronesia
-</section>
-
-
-<section>
-### Cercles d'étoiles
-
-Même technique que pour plusieurs symbols mais on mets un symbole transparent au
-centre et on text-shadow tout autour
-
-Cape Verde
-China
-Venezuala
-Cook Island
-</section>
-
-
-
-<section>
-### Plein de tecniques
-
-Comoros
-</section>
-
-
-
-
-
-
-<section>
-### Speciaux
-
-Algéria
-Greenland
-United Kingdom
-Burundi
-Jamaica: fond noir, overlay avec jaune et vert, et coupage dans le jaune en clip
-Kuwait: border simplement
-New Zealand
-South Africa
-</section>
-
-
-
-<section>
-### Trigonométrie
-
-Pas très compliqué
-Pas eu besoin de plus que Pythagore et SOHCAHTOA
-Fonctions cos/sin/tan pas dispos dans SCSS
-Mais dispos dans Ruby
-Possibilité d'étendre SCSS pour lui faire loader du Ruby
-Drawback: pas de libcss qui est plus fast
-</section>
-
-
-
+      <!--HORIZONTAL + VERTICAL-->
+      <section>
+        <h3>Horizontal et vertical</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__ben"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Benin</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mdg"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Madagascar</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__are"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">United Arab Emirates</strong>
+          </li>
+        </ul>
+        <pre><code class="language-css">
+  /* Benin */
+  linear-gradient(90deg, [...], green),
+  linear-gradient(180deg, [...], yellow),
+  linear-gradient(180deg, [...], red),
+        </code></pre>
+      </section>
+
+      <!--NORDIC CROSSES-->
+      <section>
+        <h3>Croix Nordiques</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__nor"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Norway</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__swe"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Sweden</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__fin"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Finland</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__dnk"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Denmark</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__isl"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Iceland</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--CIRCLES-->
+      <section>
+        <h3>Cercles</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__jpn"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Japan</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__bgd"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Bangladesh</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__lao"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Laos</strong>
+          </li>
+        </ul>
+        <pre><code class="language-css">
+  /* Japan */
+  background-color: white;
+  backgroud-image: radial-gradient(
+    circle at 110px 74px, 
+    red 44px, 
+    transparent 45px
+  )
+        </code></pre>
+      </section>
+
+      <!--ÉTOILES-->
+      <section>
+        <h3>Étoiles</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__vnm"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Viet Nam</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__cmr"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Cameroon</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mmr"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Myanmar</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__sur"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Suriname</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__gnb"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Guinea-Bissau</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__bfa"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Burkina Faso</strong>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Étoile</h3>
+        <div class="c-flag c-flag__vnm"></div>
+        <pre><code class="language-css">
+        background: red;
+        &:before {
+          content: "★";
+          color: yellow;
+          position: absolute;
+          top: 30px;
+          left: 66px;
+          font-size: 88px;
+          line-height: 88px;
+        }
+        </code></pre>
+      </section>
+
+      <!--MORE STARS-->
+      <section>
+        <h3>Étoiles...</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mar"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Morocco</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__isr"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Israel</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__hkg"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Hong Kong</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__twn"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Taiwan</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__nru"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Nauru</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__eth"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Ethiopia</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--SYMBOLS-->
+      <section>
+        <h3>Symboles</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__alb"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Albania</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__can"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Canada</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__ago"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Angola</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mng"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Mongolia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__lbn"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Lebanon</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__kgz"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Kyrgyzstan</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--Symbol font-->
+      <section>
+        <h3>icomoon.io/app</h3>
+        <ul class="list-symbols">
+          <li>&#x1F341;</li>
+          <li>&#x26e4;</li>
+          <li>&#x2605;</li>
+          <li>&#x2721;</li>
+          <li>&#x2738;</li>
+          <li>&#xe622;</li>
+          <li>&#xe600;</li>
+          <li>&#xe601;</li>
+          <li>&#xe602;</li>
+          <li>&#xe603;</li>
+          <li>&#xe604;</li>
+          <li>&#xe605;</li>
+          <li>&#xe606;</li>
+          <li>&#xe607;</li>
+          <li>&#xe608;</li>
+          <li>&#xe609;</li>
+          <li>&#xe610;</li>
+          <li>&#xe611;</li>
+          <li>&#xe612;</li>
+          <li>&#xe613;</li>
+          <li>&#xe614;</li>
+          <li>&#xe615;</li>
+          <li>&#xe618;</li>
+          <li>&#xe619;</li>
+          <li>&#xe620;</li>
+          <li>&#xe621;</li>
+          <li>&#xe623;</li>
+          <li>&#xe624;</li>
+          <li>&#xe625;</li>
+          <li>&#xe626;</li>
+          <li>&#xe627;</li>
+          <li>&#xe628;</li>
+          <li>&#xe629;</li>
+          <li>&#xe630;</li>
+          <li>&#xe631;</li>
+          <li>&#xe632;</li>
+          <li>&#xe633;</li>
+          <li>&#xe634;</li>
+          <li>&#xe635;</li>
+          <li>&#xe636;</li>
+          <li>&#xe637;</li>
+          <li>&#xe638;</li>
+          <li>&#xe639;</li>
+          <li>&#xe640;</li>
+          <li>&#xe641;</li>
+          <li>&#xe642;</li>
+          <li>&#xe643;</li>
+        </ul>
+      </section>
+
+      <!--SEVERAL SYMBOLS-->
+      <section>
+        <h3>Plusieurs symboles</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__ven"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Venezuela</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__fsm"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Micronesia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__hnd"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Honduras</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mtq"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Martinique</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__geo"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Georgia</strong>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Plusieurs symboles</h3>
+        <div class="c-flag c-flag__hnd"></div>
+        <pre><code class="language-css">
+color: blue;
+content: "★";
+top: 48px;
+left: 103px;
+text-shadow: 36px  9px 0px blue, 
+             36px -9px 0px blue, 
+            -36px  9px 0px blue, 
+            -36px -9px 0px blue
+        </code></pre>
+      </section>
+
+      <!--STRIPES-->
+      <section>
+        <h3>Stripes</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__usa"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">United States</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__lbr"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Liberia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tgo"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Togo</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--CRESCENTS-->
+      <section>
+        <h3>Croissants</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__lby"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Libya</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mrt"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Mauritania</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__pak"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Pakistan</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__sgp"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Singapore</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tun"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Tunisia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tur"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Turkey</strong>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Croissants</h3>
+        <div class="c-flag c-flag__mrt"></div>
+        <pre><code class="language-css">
+background-color: green;
+background-image: radial-gradient(
+                    circle at 110px 41px, 
+                    green 45px, 
+                    transparent 46x
+                  ), 
+                  radial-gradient(
+                    circle at 110px 55px, 
+                    yellow 47px, 
+                    transparent 48px
+                  )
+        </code></pre>
+      </section>
+
+      <!--TRIANGLES-->
+      <section>
+        <h3>Triangles</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__cze"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Czech Republic</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__pri"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Puerto Rico</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__cub"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Cuba</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__dji"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Djibouti</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__stp"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Sao Tome and Principe</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__ssd"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">South Sudan</strong>
+          </li>
+        </ul>
+
+      </section>
+
+      <section>
+        <h3>Triangles</h3>
+        <div class="c-flag c-flag__cze"></div>
+        <pre><code class="language-css">
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 147px;
+
+    background-color: blue;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+      </code></pre>
+      </section>
+
+      <section>
+        <h3>Triangles</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__bhr"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Bahrain</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__qat"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Qatar</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--DIAGONALES-->
+      <section>
+        <h3>Diagonales</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tza"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Tanzania</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__kna"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Saint Kitts and Nevis</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tto"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Trinidad and Tobago</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__guf"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">French Guiana</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__mhl"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Marshall Islands</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__eri"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Eritrea</strong>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Géométrie</h3>
+        <img src="/img/saint_kitts_sheet.png" class="construction_sheet" />
+      </section>
+
+      <section class="trigo">
+        <h3>Trigonométrie</h3>
+        <div class="two-columns">
+          <div class="column">
+            <ol class="list">
+              <li>Pythagore</li>
+              <li>SOHCAHTOA</li>
+            </ol>
+            <img src="/img/sohcahtoa.jpg" />
+          </div>
+          <div class="column">
+            <img src="/img/homer.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="trigo-code">
+        <h3>SCSS</h3>
+        <pre><code class="language-bash"># Shell
+scss -r ./geometry_helper.rb input.scss</code></pre>
+        <pre><code class="language-ruby"># Ruby
+require 'sass'
+module Sass::Script::Functions
+  module GeometryHelper
+    def deg_to_rad(value)
+      value * Math::PI / 180;
+    end
+
+    def cos(number)
+      Sass::Script::Number.new(Math.cos(deg_to_rad(number.value)))
+    end
+  end
+  include GeometryHelper
+end</code></pre>
+        <pre><code class="language-scss">// SCSS
+$red-stripe-size: cos($alpha) * $height;</code></pre>
+      </section>
+
+      <section>
+        <h3>Superposition</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__atg"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Antigua and Barbuda</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__guy"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Guyana</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__lca"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Saint Lucia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tls"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Timor-Leste</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__syc"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Seychelles</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--UNION JACK-->
+      <section>
+        <h3>Union Jack</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/uk_st_andrew.svg" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">St Andrew (Scotland)</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/uk_st_george.svg" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">St George (England)</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/uk_st_patrick.svg" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">St Patrick (Ireland)</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/uk.svg" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">United Kingdom</strong>
+          </li>
+        </ul>
+        <!--Besoin de Vexillologie pour comprendre la superposition-->
+        <!--Techniques sur les linear-gradient-->
+        <!--Encore plus loin pour les conscrire à un rectangle-->
+        <!--Réutilisable pour la suite-->
+      </section>
+
+      <section>
+        <h3>Cantons</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__aus"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Australia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__nzl"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">New Zealand</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__niu"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Niue</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__cok"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Cook Islands</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__tuv"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Tuvalu</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--DIFFICILES-->
+      <section>
+        <h3>Challenges</h3>
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__com"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Comoros</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__dza"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Algeria</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__grl"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Greenland</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__jam"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Jamaica</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__vut"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Vanuatu</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__zaf"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">South Africa</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!--TROP DURS-->
+      <section>
+        <h3>Pas (encore) faits</h3>
+        <ul class="c-flaglist">
+        <ul class="c-flaglist">
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/not-done/biot.png" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">British Indian Ocean Territory</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/not-done/kenya.png" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Kenya</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/not-done/macedonia.png" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Macedonia</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/not-done/mexico.png" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Mexico</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/not-done/nepal.png" class="real_flag" style="width: 180px" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Nepal</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <img src="/img/not-done/turkmenistan.png" class="real_flag" />
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Turkmenistan</strong>
+          </li>
+        </ul>
+        </ul>
+      </section>
+
+      <!--IDENTIQUES-->
+      <!--Bonus: Fun Western Sahara, Jordania, Palestina, Kuwait, EAU-->
 
 <section>
 # Conclusion
@@ -700,30 +1415,6 @@ Comme les chef-d'œuvre dont je parlais au début, tout ceci n'as pas d'utilité
 Cela ne doit pas être utilisé en production, c'est juste un moyen pour moi de
 découvrir jusqu'où je peux aller en CSS
 </section>
-
-
-
-<section>
-CSS, Compagnonnage et Vexillologie
-
-CSS Flags (https://pixelastic.github.io/css-flags/) est un projet un peu fou de
-recréer l'ensemble des drapeaux du monde en CSS. Et comme si ce n'était pas une
-tâche assez longue, on va le faire en se limitant à un seul `div` par drapeau.
-
-Tim Carry nous présentera dans ce talk les techniques pour utiliser un unique
-`div` au maximum de ces capacités. Nous verrons aussi pourquoi des projets de ce
-genre sont importants.
-
-</section>
-
-
-
-
-
-
-
-
-
 
       <!--QUESTIONS-->
       <section data-background="./img/questions.jpg">
@@ -764,16 +1455,17 @@ genre sont importants.
           return !document.body.classList;
         }
       }, {
-        src: './plugin/highlight/highlight.js',
-        async: true,
-        callback: function() {
-          hljs.initHighlightingOnLoad();
-        }
-      }, {
         src: './plugin/notes/notes.js',
         async: true,
         condition: function() {
           return !!document.body.classList;
+        }
+      },
+      { 
+        src: 'plugin/prismjs/prism.js', 
+        async: true, 
+        callback: function () {
+          Prism.highlightAll();
         }
       }]
     });

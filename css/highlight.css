@@ -1,0 +1,52 @@
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background:#121212;
+  color: #D0D0D0;
+}
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+  font-weight:normal;
+  display: block;
+}
+
+.token.property {
+  color: #FF5F5F;
+}
+.token.punctuation {
+  color: #D0D0D0;
+}
+.token.function {
+  color: #008700;
+}
+.token.variable {
+  color: #00AF5F;
+}
+.token.keyword {
+   color: #FF5F5F;
+}
+.token.constant {
+   color: #FFAF00;
+}
+.token.string {
+  color: #5F87AF;
+}
+.token.number {
+  color: #5F87AF;
+  font-weight: bold;
+}
+.token.comment {
+  color: #626262;
+  font-weight: bold;
+}

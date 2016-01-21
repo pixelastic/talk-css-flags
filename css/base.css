@@ -35,10 +35,25 @@ body {
 .reveal .list-no-bullet {
   list-style:none;
   margin-left:0;
+  font-size: 3rem;
+  line-height: 1.5em;
 }
 .reveal .list {
   font-size: 3rem;
   line-height: 1.5em;
+}
+.reveal .list-symbols {
+  font-family: Symbols;
+  font-size: 4rem;
+  text-align: center;
+  list-style: none;
+  line-height: 1.5em;
+  color: black;
+}
+.reveal .list-symbols li {
+  width: 5rem;
+  height: 5rem;
+  float: left;
 }
 .reveal .image-center {
   display: block;
@@ -46,5 +61,13 @@ body {
 }
 .reveal .image-icon {
   height: 1em;
+}
+
+.reveal .two-columns {
+  overflow: hidden;
+}
+.reveal .two-columns .column {
+  float:left;
+  width: 50%;
 }
 
