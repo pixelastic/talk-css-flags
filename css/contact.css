@@ -39,11 +39,11 @@
 }
 .reveal .contact .part-above:before {
   border-bottom:1px solid transparent;
-  top:-1rem;
+  top:-2rem;
 }
 .reveal .contact .part-below:before {
   border-top:1px solid transparent;
-  bottom:-2.5rem;
+  bottom:-3.5rem;
 }
 
 /* Specific alignment */
@@ -52,9 +52,10 @@
 }
 .reveal .contact .part-twitter:after {
   left:-3rem;
+  bottom: -5rem;
 }
 .reveal .contact .part-mail:before {
-  bottom:-5rem;
+  bottom:-6.5rem;
 }
 .reveal .contact .part-mail:after {
   bottom:-8rem;

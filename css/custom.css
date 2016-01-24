@@ -1,3 +1,27 @@
+.whoami .list-no-bullet {
+  width: 100%;
+}
+.whoami--algolia {
+  overflow: hidden;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  width: 100%;
+}
+.whoami--algolia p {
+  float: left;
+}
+.whoami--algolia a {
+  display: block;
+  height: 60px;
+}
+.whoami--algolia img {
+  height: 60px;
+  float: left;
+  margin-left: 10px;
+}
+
+
 .trigo .list {
   margin-top: 50px;
   margin-bottom: 50px;
