@@ -61,15 +61,15 @@ body {
 }
 .reveal .list-symbols {
   font-family: Symbols;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   list-style: none;
   line-height: 1.5em;
   color: black;
 }
 .reveal .list-symbols li {
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   float: left;
 }
 .reveal .image-center {

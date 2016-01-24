@@ -23,6 +23,8 @@
 
 
 .trigo .list {
+  background: none;
+  padding: 0;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -37,8 +39,17 @@
   font-size: 1.6rem;
 }
 
-.reveal .uk .c-flag__gbr {
-  transform: scale(8);
+.reveal .uk h2 {
+  margin-top: 40px;
+}
+
+.reveal .conclusion blockquote {
+  font-size: 4rem;
+  line-height: 1.5em;
+  background: rgba(0, 0, 0, .5);
+  width: 80%;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .reveal .real_flag {
