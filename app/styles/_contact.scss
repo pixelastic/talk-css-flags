@@ -1,0 +1,91 @@
+.reveal {
+  .contact {
+    font-size: 0;
+    font-family: 'Title';
+  }
+  .contact--part {
+    position: relative;
+    display: inline-block;
+    font-size: 7rem;
+    line-height: 1;
+    text-shadow:3px 4px 5px rgba(0,0,0,0.75);
+    // Name of the contact part
+    &:after {
+      content:attr(data-name);
+      position:absolute;
+      display:block;
+      right:0;
+      left:0;
+      text-align:center;
+      font-size:2.5rem;
+      font-weight:normal;
+    }
+    // Ruler to show which part is selected
+    &:before {
+      content:"";
+      position:absolute;
+      display:block;
+      right:0;
+      left:0;
+      border:3px solid white;
+      height:10px;
+    }
+  }
+
+  // Full email
+  .contact--part__mail {
+    &:after {
+      bottom: -6rem;
+    }
+    &:before {
+      bottom: -4rem;
+      border-top: none;
+    }
+  }
+  // Twitter handle
+  .contact--part__twitter {
+    // Hack to handle the new lines in the markup, while still keeping items
+    // aligned
+    margin-right: -24px;
+    margin-left: -24px;
+    &:after {
+      bottom: -3rem;
+      left: -4.5rem;
+    }
+    &:before {
+      bottom: -1rem;
+      left: -5.5rem;
+      border-top: none;
+    }
+  }
+  // Website
+  .contact--part__website {
+    &:after {
+      top: -2.8rem;
+    }
+    &:before {
+      top: -.5rem;
+      left: -1.5rem;
+      border-bottom: none;
+    }
+  }
+}
+
+// Voucher
+.reveal {
+  .voucher {
+    a {
+      font-family: 'Code';
+      font-size: 1.7rem;
+      line-height: 1.5rem;
+      background:#3F3F3F;
+      color:#DCDCDC;
+      padding:0.2em 0.5em;
+      font-weight: bold;
+    }
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    right: 0;
+  }
+}

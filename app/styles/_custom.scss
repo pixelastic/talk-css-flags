@@ -1,0 +1,81 @@
+.reveal {
+  .intro-title {
+    font-size: 6rem;
+  }
+
+  .whoami-logo {
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .challenge-quote {
+    font-size: 3rem;
+    line-height: 1.2em;
+    padding: 2rem;
+    text-align: center;
+    opacity: 1;
+  }
+
+  // Displaying the list of all symbols used neatly on several lines
+  .list-symbols {
+    font-family: Symbols;
+    font-size: 3rem;
+    text-align: center;
+    list-style: none;
+    line-height: 1.5em;
+    color: black;
+    li {
+      width: 3rem;
+      height: 3rem;
+      float: left;
+    }
+  }
+
+  // Adding a background on the construction sheet to make it easier to read
+  .construction_sheet {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+    background: white;
+    padding: 40px;
+  }
+
+  .conclusion-quote {
+    font-size: 4rem;
+    line-height: 1.5em;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  // Aligning real flags
+  .c-flaglist__realflags {
+    img {
+      width: 300px;
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+    }
+    .c-flaglist--name {
+      font-size: 1.4rem;
+    }
+  }
+
+  // Add an opaque background on an element to make it more easily readable
+  .u-opaque {
+    background: rgba(0, 0, 0, .5);
+  }
+
+  // Make a list bigger
+  .u-list-bigger {
+    display: block;
+    padding: 1rem;
+    line-height: 1.5;
+    font-size: 3rem;
+  }
+
+  // Full page code example
+  .code-example-big {
+    margin-top: 1rem;
+  }
+}

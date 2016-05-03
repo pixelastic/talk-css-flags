@@ -1,0 +1,44 @@
+.reveal {
+  // Align text content right, left or center
+  .u-align-right {
+    text-align: right;
+  }
+  .u-align-left {
+    text-align: left;
+  }
+  .u-align-center {
+    text-align: center;
+  }
+  .u-align-center-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  // Also align vertically (for flex items)
+  .u-align-middle {
+    align-self: center;
+  }
+  .u-align-top {
+    align-self: top;
+  }
+  .u-align-bottom {
+    align-self: bottom;
+  }
+
+  // Text wrapping
+  .u-text--prewrap {
+    white-space: pre-wrap;
+  }
+  .u-text--pre {
+    white-space: pre;
+  }
+
+  // Remove bullets from list
+  .u-list-no-bullets {
+    list-style: none;
+    margin-left: 0;
+  }
+  .u-list-no-margin {
+    margin: 0;
+  }
+}

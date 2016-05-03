@@ -1,0 +1,52 @@
+// Link on top of the slides, with link to the demo
+.demo-link {
+  font-family: "Code", Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px #313131;
+  font-size: 1.3rem;
+  margin: 0 0 20px 0;
+  color: #FEFEFE;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  text-decoration: none;
+  z-index: 3000;
+}
+
+
+
+
+// .reveal pre {
+//   font-size: 2rem;
+// }
+// .reveal section {
+//   text-align:left; 
+// }
+// .reveal ul,
+// .reveal ol {
+//   list-style-position: inside;
+//   margin: 0;
+// }
+// .reveal blockquote {
+//   font-size: 3rem;
+//   line-height: 1.2em;
+//   padding: 2rem;
+//   text-align: center;
+// }
+// 
+// .reveal .list {
+//   font-size: 3rem;
+//   line-height: 1.5em;
+//   background: rgba(0, 0, 0, .5);
+//   width: 100%;
+//   padding: 1rem;
+//   border-radius: 5px;
+// }
+// .reveal .image-center {
+//   display: block;
+//   margin: 0 auto;
+// }
+// .reveal .image-icon {
+//   height: 1em;
+// }
+// 

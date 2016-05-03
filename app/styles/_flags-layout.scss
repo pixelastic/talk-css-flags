@@ -1,0 +1,63 @@
+.reveal {
+  .c-flaglist {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 980px;
+  }
+
+  .c-flaglist--item {
+    list-style: none;
+    flex: 1 1 230px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    border-bottom: 0px;
+    box-shadow: 0 2px 2px #e6e6e6;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .c-flaglist--item__example {
+    width: 300px;
+    margin:0 auto;
+  }
+
+  .c-flaglist--showcase {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    max-height: 200px;
+    background: gainsboro;
+  }
+
+  .c-flaglist--showcase-inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .c-flaglist--name {
+    color: #333;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em;
+  }
+}
+//   justify-content: space-between;
+//   -ms-flex-pack: justify; }
+// 
+// .reveal .c-flaglist--item {
+//   flex-grow: 1;
+//   position: relative; }
+// 
+// .reveal .c-flaglist--showcase {
+//   background-color: gainsboro; }
+// 
+// .reveal .c-flaglist--showcase-inner {
+// 
+// .reveal .c-flaglist--name {
+// 

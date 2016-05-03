@@ -1,0 +1,114 @@
+.reveal {
+  // Multiline code blocks
+  pre {
+    padding: .5rem;
+    font-size: 1.5rem;
+    background: #121212;
+    overflow: hidden;
+    line-height: 1.1em;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    box-shadow: none;
+    code {
+      padding: 0;
+      // Reverting the styles of the default `code`
+      background: transparent;
+      font-weight: normal;
+      font-size: inherit;
+      line-height: inherit;
+      // background: blue;
+      span {
+        // background: red;
+        // display: inline-block;
+      }
+    }
+  }
+
+  // Inline code
+  code {
+    font-family: 'Code';
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    background:#3F3F3F;
+    color:#DCDCDC;
+    padding:0.2em 0.5em;
+    font-weight: bold;
+  }
+
+  // Presenting a long url so people can easily see it
+  .code-url {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    font-family: 'Code';
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    background:#3F3F3F;
+    color:#DCDCDC;
+    padding:0.2em 0.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  // Easy spotting of some information in code blocks
+  .code--key {
+    color: #FF5F5F;
+  }
+  .code--value {
+    color: #00AF5F;
+  }
+  .code--file {
+    color: #7F81FE;
+  }
+  .code--directory {
+    color: #00AF5F;
+  }
+
+  // Oroshi colorscheme
+  .token {
+    &.property {
+      color: #FF5F5F;
+    }
+    &.punctuation {
+      color: #D0D0D0;
+    }
+    &.function {
+      color: #008700;
+    }
+    &.variable {
+      color: #00AF5F;
+    }
+    &.keyword {
+       color: #FF5F5F;
+    }
+    &.constant {
+       color: #FFAF00;
+    }
+    &.string {
+      color: #5F87AF;
+    }
+    &.number {
+      color: #5F87AF;
+      font-weight: bold;
+    }
+    &.comment {
+      color: #626262;
+    }
+  }
+
+  .language-html .token {
+    &.tag,
+    &.punctuation {
+      color: #008700;
+    }
+    &.attr-name {
+       color: #FF5F5F;
+    }
+    &.attr-value {
+      color: #5F87AF;
+    }
+  }
+}
+

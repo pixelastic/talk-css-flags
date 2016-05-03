@@ -1,0 +1,20 @@
+/* Grid */
+.reveal {
+  // If you need columns, wrap them in .row, and define each of them with
+  // .column.
+  // <div class="row">
+  //   <div class="column"></div>
+  //   <div class="column"></div>
+  // </div>
+  .row {
+    display: flex;
+    flex-flow: row nowrap;
+    .column {
+      flex: 1;
+      + .column {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+

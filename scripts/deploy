@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+npm run build &&
+rsync \
+  --recursive \
+  --verbose \
+  --archive \
+  --update \
+  --delete \
+  --prune-empty-dirs \
+  --compress \
+  ./public/* \
+  pixelastic:/var/www/pixelastic.com/talks.pixelastic.com/dist/css-flags-parisrb/
+
+
+
+
