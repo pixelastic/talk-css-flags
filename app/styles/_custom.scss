@@ -19,16 +19,18 @@
   // Displaying the list of all symbols used neatly on several lines
   .list-symbols {
     font-family: Symbols;
-    font-size: 3rem;
-    text-align: center;
-    list-style: none;
-    line-height: 1.5em;
-    color: black;
-    li {
-      width: 3rem;
-      height: 3rem;
-      float: left;
-    }
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1rem;
+  }
+  .list-symbols--item {
+      $symbol-size: 3.3rem;
+      font-size: $symbol-size;
+      width: $symbol-size;
+      margin: .4rem;
+      line-height: $symbol-size;
+      text-shadow: 1px 1px 2px black;
   }
 
   // Adding a background on the construction sheet to make it easier to read

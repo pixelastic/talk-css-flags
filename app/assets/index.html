@@ -34,11 +34,11 @@
             <h4><a href="https://twitter.com/pixelastic/">@pixelastic</a></h4>
           </div>
           <div class="column u-align-center">
-            <a href="http://www.meetup.com/fr-FR/HumanTalks-Paris/" class="whoami-logo">
-              <img src="./img/humantalks.png" alt="HumanTalks logo">
-            </a>
             <a href="https://www.algolia.com/" class="whoami-logo">
               <img src="./img/algolia.png" alt="Algolia logo"/>
+            </a>
+            <a href="http://www.meetup.com/fr-FR/HumanTalks-Paris/" class="whoami-logo">
+              <img src="./img/humantalks.png" alt="HumanTalks logo">
             </a>
           </div>
         </div>
@@ -48,6 +48,51 @@
       <section data-background="./img/compagnonnage.jpg">
         <h1>Compagnonnage</h1>
       </section>
+
+      <!--
+          Alors le Compagnonnage
+          Il y a un an, j'ai visité Tours et le musée du Compagnonnage
+          Je ne connaissais rien avant d'y aller
+          Les compagnons étaient des artisans qui se retrouvaient sous forme de Guilde
+          Des couvreurs, des sculpteurs, des horlogers, etc
+          Partageaient leurs techniques, apprenaient, fonctionnait selon un principe de disciple et de maitre
+          Gage de qualité que d'être un compagnon
+
+          Rapport particulier au travail
+          Travail est un outil, on ne doit pas être asservi par celui-ci
+          S'appellent maitres d'œuvre, les œuvres sont leurs constructions, et restent maitres
+          Cherchent à améliorer constamment leur discipline, apprendre aux novices, etc
+
+          Plein de principes qui font échos à ce que je connais dans le dévelpppement logicie, dans le software craftmanship
+          Mais un truc qu'ils font, qu'on ne fait pas, c'est le principe du Chef d'œuvre
+
+          Litérralement, le CHEF d'œuvre, l'œuvre majeure de la vie du compagnon
+          Il travaille dessus longtemps, 10 à 15 ans, durant son apprentissage
+          C'est un modèle réduit sur lequel il peuvent s'exercer
+          Ils peuvent apprendre toutes les techniques de leur art, et les peaufiner jusqu'à les maitriser
+          Ils utilisent toutes les techniques sur la même œuvre, ce qui n'arrive jamais sur de vraies œuvres
+          Ils en découvrent comme ça de nouvelles, par la synergie de plusieurs techniques
+          C'est aussi un terrain d'apprentissage pour tester de nouvelles choses, ce qu'ils ne peuvent pas faire sur une vraie construction
+          Cela leur permet d'apprendre et de maitriser les bases et d'aller encore plus loin
+
+          Donc je me suis dis que si ça marchait pour eux, ça pouvait aussi marcher pour nous
+          Je me suis donc mis décider à faire mon propre chef d'œuvre
+          En CSS, parce que c'est un langage que je connais bien
+          Un langage qui est très puissant mais sous-estimé
+          Et surtout parce qu'on n'a jamais la possibilité en prod de l'utiliser au maximum de ses capacités à cause de la compat cross-browser
+          Et il y a des tas de propriétés CSS que je n'ai jamais eu l'occasion de tester
+
+          Je me suis donc mis le challenge suivant:
+
+          Ce qui m'amène au troisième mot
+          La vexillologie, c'est l'étude des drapraux.
+          Des gens sont pasionnés de drapeaux comme on peut etre passioné de musique ou de timbres
+          Il y a toute une vocabulaire sur les couleurs et les formes
+          Toute une histoire sur les drapeaux, qui reflete l'histoire du pays
+          C'est un nouveau monde à découvrir et apprendre
+          Comme j'allais construire des drapeaux, il me fallait comprendre la matière première, et pas juste la technique
+
+      -->
 
       <section data-background="./img/compagnonnage-green.jpg">
         <h3>Chef d'œuvre</h3>
@@ -149,10 +194,10 @@
           <strong class="c-flaglist--name">France</strong>
         </div>
         <pre class="code-example-big"><code class="language-scss">
-          width: 100px;
-          border-left: 100px solid blue;
-          border-right: 100px solid red;
-          background: white;
+    width: 100px;
+    background: white;
+    border-left: 100px solid blue;
+    border-right: 100px solid red;
         </code></pre>
       </section>
 
@@ -271,7 +316,7 @@
 
       <!--MORE-->
       <section>
-        <h3>Autres challenges</h3>
+        <h3>Autres drapeaux</h3>
         <ul class="c-flaglist">
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
@@ -423,9 +468,10 @@
         </ul>
         <pre class="code-example-big"><code class="language-scss">
   /* Bénin */
-  linear-gradient(90deg, [...], green),
-  linear-gradient(180deg, [...], yellow),
-  linear-gradient(180deg, [...], red),
+  background-image: 
+    linear-gradient(90deg, [...], green),
+    linear-gradient(180deg, [...], yellow),
+    linear-gradient(180deg, [...], red);
         </code></pre>
       </section>
 
@@ -433,14 +479,6 @@
       <section>
         <h3>Croix Nordiques</h3>
         <ul class="c-flaglist">
-          <li class="c-flaglist--item">
-            <div class="c-flaglist--showcase">
-              <div class="c-flaglist--showcase-inner">
-                <div class="c-flag c-flag__nor"></div>
-              </div>
-            </div>
-            <strong class="c-flaglist--name">Norvège</strong>
-          </li>
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
               <div class="c-flaglist--showcase-inner">
@@ -464,6 +502,14 @@
               </div>
             </div>
             <strong class="c-flaglist--name">Danemark</strong>
+          </li>
+          <li class="c-flaglist--item">
+            <div class="c-flaglist--showcase">
+              <div class="c-flaglist--showcase-inner">
+                <div class="c-flag c-flag__nor"></div>
+              </div>
+            </div>
+            <strong class="c-flaglist--name">Norvège</strong>
           </li>
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
@@ -572,20 +618,24 @@
       </section>
 
       <section>
-        <h3>Étoile</h3>
-        <div class="c-flag c-flag__vnm"></div>
-        <pre class="code-example-big"><code class="language-scss">
-        background: red;
-        &:before {
-          content: "★"; // BLACK STAR (U+2605)
-          color: yellow;
-          position: absolute;
-          top: 30px;
-          left: 66px;
-          font-size: 88px;
-          line-height: 88px;
-        }
-        </code></pre>
+        <div class="c-flaglist--item c-flaglist--item__example">
+          <div class="c-flaglist--showcase">
+            <div class="c-flaglist--showcase-inner">
+              <div class="c-flag c-flag__vnm"></div>
+            </div>
+          </div>
+          <strong class="c-flaglist--name">Vietnam</strong>
+        </div>
+        <pre class="code-example-big"><code class="language-scss">  background: red;
+  &:before {
+    content: "★"; // BLACK STAR (U+2605)
+    color: yellow;
+    position: absolute;
+    top: 30px;
+    left: 66px;
+    font-size: 88px;
+    line-height: 88px;
+  }</code></pre>
       </section>
 
       <!--SYMBOLS-->
@@ -646,55 +696,55 @@
       <!--Symbol font-->
       <section>
         <h3>icomoon.io/app</h3>
-        <ul class="list-symbols">
-          <li>&#x1F341;</li>
-          <li>&#x26e4;</li>
-          <li>&#x2605;</li>
-          <li>&#x2721;</li>
-          <li>&#x2738;</li>
-          <li>&#xe622;</li>
-          <li>&#xe600;</li>
-          <li>&#xe601;</li>
-          <li>&#xe602;</li>
-          <li>&#xe603;</li>
-          <li>&#xe604;</li>
-          <li>&#xe605;</li>
-          <li>&#xe606;</li>
-          <li>&#xe607;</li>
-          <li>&#xe608;</li>
-          <li>&#xe609;</li>
-          <li>&#xe610;</li>
-          <li>&#xe611;</li>
-          <li>&#xe612;</li>
-          <li>&#xe613;</li>
-          <li>&#xe614;</li>
-          <li>&#xe615;</li>
-          <li>&#xe618;</li>
-          <li>&#xe619;</li>
-          <li>&#xe620;</li>
-          <li>&#xe621;</li>
-          <li>&#xe623;</li>
-          <li>&#xe624;</li>
-          <li>&#xe625;</li>
-          <li>&#xe626;</li>
-          <li>&#xe627;</li>
-          <li>&#xe628;</li>
-          <li>&#xe629;</li>
-          <li>&#xe630;</li>
-          <li>&#xe631;</li>
-          <li>&#xe632;</li>
-          <li>&#xe633;</li>
-          <li>&#xe634;</li>
-          <li>&#xe635;</li>
-          <li>&#xe636;</li>
-          <li>&#xe637;</li>
-          <li>&#xe638;</li>
-          <li>&#xe639;</li>
-          <li>&#xe640;</li>
-          <li>&#xe641;</li>
-          <li>&#xe642;</li>
-          <li>&#xe643;</li>
-        </ul>
+        <div class="list-symbols">
+          <div class="list-symbols--item">&#x1F341;</div>
+          <div class="list-symbols--item">&#x26e4;</div>
+          <div class="list-symbols--item">&#x2605;</div>
+          <div class="list-symbols--item">&#x2721;</div>
+          <div class="list-symbols--item">&#x2738;</div>
+          <div class="list-symbols--item">&#xe622;</div>
+          <div class="list-symbols--item">&#xe600;</div>
+          <div class="list-symbols--item">&#xe601;</div>
+          <div class="list-symbols--item">&#xe602;</div>
+          <div class="list-symbols--item">&#xe603;</div>
+          <div class="list-symbols--item">&#xe604;</div>
+          <div class="list-symbols--item">&#xe605;</div>
+          <div class="list-symbols--item">&#xe606;</div>
+          <div class="list-symbols--item">&#xe607;</div>
+          <div class="list-symbols--item">&#xe608;</div>
+          <div class="list-symbols--item">&#xe609;</div>
+          <div class="list-symbols--item">&#xe610;</div>
+          <div class="list-symbols--item">&#xe611;</div>
+          <div class="list-symbols--item">&#xe612;</div>
+          <div class="list-symbols--item">&#xe613;</div>
+          <div class="list-symbols--item">&#xe614;</div>
+          <div class="list-symbols--item">&#xe615;</div>
+          <div class="list-symbols--item">&#xe618;</div>
+          <div class="list-symbols--item">&#xe619;</div>
+          <div class="list-symbols--item">&#xe620;</div>
+          <div class="list-symbols--item">&#xe621;</div>
+          <div class="list-symbols--item">&#xe623;</div>
+          <div class="list-symbols--item">&#xe624;</div>
+          <div class="list-symbols--item">&#xe625;</div>
+          <div class="list-symbols--item">&#xe626;</div>
+          <div class="list-symbols--item">&#xe627;</div>
+          <div class="list-symbols--item">&#xe628;</div>
+          <div class="list-symbols--item">&#xe629;</div>
+          <div class="list-symbols--item">&#xe630;</div>
+          <div class="list-symbols--item">&#xe631;</div>
+          <div class="list-symbols--item">&#xe632;</div>
+          <div class="list-symbols--item">&#xe633;</div>
+          <div class="list-symbols--item">&#xe634;</div>
+          <div class="list-symbols--item">&#xe635;</div>
+          <div class="list-symbols--item">&#xe636;</div>
+          <div class="list-symbols--item">&#xe637;</div>
+          <div class="list-symbols--item">&#xe638;</div>
+          <div class="list-symbols--item">&#xe639;</div>
+          <div class="list-symbols--item">&#xe640;</div>
+          <div class="list-symbols--item">&#xe641;</div>
+          <div class="list-symbols--item">&#xe642;</div>
+          <div class="list-symbols--item">&#xe643;</div>
+        </div>
         <pre class="code-example-big"><code class="language-scss">
     @font-face {
       font-family: "Symbols";
@@ -1006,28 +1056,6 @@ background-image: radial-gradient(
         </div>
       </section>
 
-      <section class="trigo-code">
-        <h3>Ruby (enfin !)</h3>
-        <pre><code class="language-bash"># Shell
-scss -r ./geometry_helper.rb input.scss</code></pre>
-        <pre><code class="language-ruby"># Ruby
-require 'sass'
-module Sass::Script::Functions
-  module GeometryHelper
-    def deg_to_rad(value)
-      value * Math::PI / 180;
-    end
-
-    def cos(number)
-      Sass::Script::Number.new(Math.cos(deg_to_rad(number.value)))
-    end
-  end
-  include GeometryHelper
-end</code></pre>
-        <pre><code class="language-scss">// SCSS
-$red-stripe-size: cos($alpha) * $height;</code></pre>
-      </section>
-
       <!--UNION JACK-->
       <section data-background="./img/uk.svg" class="uk">
         <h2>Royaume-Uni</h2>
@@ -1042,7 +1070,7 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
                 <img src="./img/uk_st_andrew.svg" />
               </div>
             </div>
-            <strong class="c-flaglist--name">St André (Écosse)</strong>
+            <strong class="c-flaglist--name">Écosse</strong>
           </li>
           <li class="c-flaglist--item c-flaglist__realflags">
             <div class="c-flaglist--showcase">
@@ -1050,7 +1078,7 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
                 <img src="./img/uk_st_george.svg" />
               </div>
             </div>
-            <strong class="c-flaglist--name">St Georges (Angleterre)</strong>
+            <strong class="c-flaglist--name">Angleterre</strong>
           </li>
           <li class="c-flaglist--item c-flaglist__realflags">
             <div class="c-flaglist--showcase">
@@ -1058,7 +1086,7 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
                 <img src="./img/uk_st_patrick.svg" />
               </div>
             </div>
-            <strong class="c-flaglist--name">St Patrick (Irlande)</strong>
+            <strong class="c-flaglist--name">Irlande</strong>
           </li>
           <li class="c-flaglist--item c-flaglist__realflags">
             <div class="c-flaglist--showcase">
@@ -1069,31 +1097,6 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
             <strong class="c-flaglist--name">Royaume-Uni</strong>
           </li>
         </ul>
-        <!--Besoin de Vexillologie pour comprendre la superposition-->
-        <!--Techniques sur les linear-gradient-->
-        <!--Encore plus loin pour les conscrire à un rectangle-->
-        <!--Réutilisable pour la suite-->
-      </section>
-
-      <section>
-        <div class="c-flaglist--item c-flaglist--item__example">
-          <div class="c-flaglist--showcase">
-            <div class="c-flaglist--showcase-inner">
-              <div class="c-flag c-flag__gbr"></div>
-            </div>
-          </div>
-          <strong class="c-flaglist--name">Royaume Uni</strong>
-        </div>
-        <pre class="code-example-big"><code class="language-scss">
-        // constrained gradient
-        linear-gradient(
-          26deg, 
-          transparent, transparent 90px, 
-          red 90px, red 98px,
-          transparent 98px, transparent 100%
-        ) 0 0/110px 100% no-repeat;
-        // start_x start_y/max_width max_height
-        </code></pre>
       </section>
 
       <section>
@@ -1179,15 +1182,15 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
                 <div class="c-flag c-flag__com"></div>
               </div>
             </div>
-            <strong class="c-flaglist--name">Comoros</strong>
+            <strong class="c-flaglist--name">Comorres</strong>
           </li>
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
               <div class="c-flaglist--showcase-inner">
-                <div class="c-flag c-flag__dza"></div>
+                <div class="c-flag c-flag__mkd"></div>
               </div>
             </div>
-            <strong class="c-flaglist--name">Algeria</strong>
+            <strong class="c-flaglist--name">Macédoine</strong>
           </li>
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
@@ -1195,7 +1198,7 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
                 <div class="c-flag c-flag__grl"></div>
               </div>
             </div>
-            <strong class="c-flaglist--name">Greenland</strong>
+            <strong class="c-flaglist--name">Groënland</strong>
           </li>
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
@@ -1203,7 +1206,7 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
                 <div class="c-flag c-flag__jam"></div>
               </div>
             </div>
-            <strong class="c-flaglist--name">Jamaica</strong>
+            <strong class="c-flaglist--name">Jamaïque</strong>
           </li>
           <li class="c-flaglist--item">
             <div class="c-flaglist--showcase">
@@ -1219,7 +1222,7 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
                 <div class="c-flag c-flag__zaf"></div>
               </div>
             </div>
-            <strong class="c-flaglist--name">South Africa</strong>
+            <strong class="c-flaglist--name">Afrique du Sud</strong>
           </li>
         </ul>
       </section>
@@ -1243,14 +1246,6 @@ $red-stripe-size: cos($alpha) * $height;</code></pre>
               </div>
             </div>
             <strong class="c-flaglist--name">Kenya</strong>
-          </li>
-          <li class="c-flaglist--item c-flaglist__realflags">
-            <div class="c-flaglist--showcase">
-              <div class="c-flaglist--showcase-inner">
-                <img src="./img/not-done/macedonia.png" />
-              </div>
-            </div>
-            <strong class="c-flaglist--name">Macedonia</strong>
           </li>
           <li class="c-flaglist--item c-flaglist__realflags">
             <div class="c-flaglist--showcase">
