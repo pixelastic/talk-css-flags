@@ -9,11 +9,19 @@
   }
 
   .challenge-quote {
+    margin-top: 3rem;
     font-size: 3rem;
     line-height: 1.2em;
     padding: 2rem;
     text-align: center;
     opacity: 1;
+    code {
+      font-style: normal;
+      background: none;
+      font-size: 2.5rem;
+      padding: 0;
+      color: #FF5F5F;
+    }
   }
 
   // Displaying the list of all symbols used neatly on several lines
