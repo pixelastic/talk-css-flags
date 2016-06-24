@@ -9,7 +9,7 @@ rsync \
   --prune-empty-dirs \
   --compress \
   ./public/* \
-  pixelastic:/var/www/pixelastic.com/talks.pixelastic.com/dist/css-flags-bestofweb/
+  pixelastic:/var/www/pixelastic.com/talks.pixelastic.com/dist/css-flags-takeofftalks/
 
 
 
