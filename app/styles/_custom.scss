@@ -24,6 +24,22 @@
     }
   }
 
+  // Alternate Japan version
+  .c-flag__jpn__alternate {
+    width: 220px;
+    height: 147px;
+    background-color: #FFF;
+    background-image: radial-gradient(circle at 110px 73.5px, #BC002D 44.1px, transparent 45.1px);
+  }
+
+  .c-flag__cze__alternate {
+    width: 220px;
+    height: 0px;
+    border-top: 73px solid #FFF;
+    border-bottom: 73px solid #E4002B;
+    border-left: 110px solid #004B87;
+  }
+
   // Displaying the list of all symbols used neatly on several lines
   .list-symbols {
     font-family: Symbols;
@@ -33,10 +49,9 @@
     margin-top: 1rem;
   }
   .list-symbols--item {
-      $symbol-size: 3.3rem;
+      $symbol-size: 1.8em;
       font-size: $symbol-size;
       width: $symbol-size;
-      margin: .4rem;
       line-height: $symbol-size;
       text-shadow: 1px 1px 2px black;
   }

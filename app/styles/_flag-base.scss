@@ -1,0 +1,67 @@
+/*
+ * This is a copy paste of 
+ * https://pixelastic.github.io/css-flags/main.css
+ * With a few manuals edits for fitting in the presentation
+ */
+@font-face {
+  font-family: 'Symbols';
+  src: url('./fonts/Symbols.woff') format('woff'),
+       url('./fonts/Symbols.ttf') format('truetype'),
+       url('./fonts/Symbols.svg#symbols') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.c-flaglist {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 30px
+}
+
+.c-flaglist--item {
+  flex: 1 1 300px;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  margin: 0 1em 1.5em;
+  position: relative
+}
+
+.c-flaglist--showcase {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+  max-height: 200px;
+  background-color: #dcdcdc
+}
+
+.c-flaglist--showcase-inner {
+  display: table-cell;
+  vertical-align: middle
+}
+
+.c-flaglist--name {
+  transition: all .2s ease-in-out;
+  text-align: center;
+  display: block;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: .5em .75em
+}
+
+.reveal .c-flag {
+  margin: 0 auto;
+  line-height: 1;
+  position: relative; }
+
+
+.c-flag:after,
+.c-flag:before {
+  font-family: Symbols
+}
