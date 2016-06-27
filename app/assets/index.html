@@ -1107,6 +1107,28 @@ background-image: radial-gradient(
         </div>
       </section>
 
+      <section class="trigo-code">
+        <h3>SCSS</h3>
+        <pre><code class="language-bash"># Shell
+scss -r ./geometry_helper.rb input.scss</code></pre>
+        <pre><code class="language-ruby"># Ruby
+require 'sass'
+module Sass::Script::Functions
+  module GeometryHelper
+    def deg_to_rad(value)
+      value * Math::PI / 180;
+    end
+
+    def cos(number)
+      Sass::Script::Number.new(Math.cos(deg_to_rad(number.value)))
+    end
+  end
+  include GeometryHelper
+end</code></pre>
+      <pre><code class="language-scss">// SCSS
+$red-stripe-size: cos($alpha) * $height;</code></pre>
+    </section>
+
       <!--UNION JACK-->
       <section data-background="./img/uk.svg" class="uk">
         <h2>Royaume-Uni</h2>
