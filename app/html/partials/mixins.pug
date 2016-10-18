@@ -1,10 +1,18 @@
 mixin flag(code, name, additional_classes)
-  - additional_classes = additional_classe || ''
-  .flex-auto.w-30.br1.oh.shadow-4.bg-light-gray.mr1.mb1.flex.flex-column.justify-center.items-stretch
+  - additional_classes = additional_classes || ''
+  .flex-auto.w-30.br1.oh.shadow-4.bg-light-gray.mr1.mb1.flex.flex-column.justify-center.items-stretch(class=`${additional_classes}`)
     .flex-auto.pa1.flex.items-center
       .c-flag.shadow-3(class=`c-flag__${code}`)
     .flex-none.pa1.bg-white.dark-gray.b.f7.h1.flex.items-center.w-100.justify-center
       = name
-    
 
+mixin flag_fake(path, name)
+  .flex-none.w-30.br1.oh.shadow-4.bg-light-gray.mr1.mb1.flex.flex-column
+    .flex-auto.pa1.flex.items-center.justify-center
+      img.shadow-3.w3(src=path, alt=`Flag of ${name}`)
+    .flex-none.pa1.bg-white.dark-gray.b.f7.h1.flex.items-center.w-100.justify-center
+      = name
+    
+mixin custom_font(symbol)
+  .flex-none.tc.w1.white!=symbol
   

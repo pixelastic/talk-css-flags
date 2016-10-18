@@ -1,0 +1,27 @@
+section
+  h3.amaranth.text-shadow.f2.ma0.mb2 vexilla-mundi.com
+
+  .flex-row-nowrap
+    .flex-auto.w-33.flex.items-center
+      img.bg-white.center.db.w4.pa2.br2(src='./img/tanzania_sheet.png', alt='Tanzanian flag construction sheet')
+    .flex-auto.ml2.lh-copy
+      pre.bg-near-black.pa1.f8
+        code.language-bash
+          |# Shell
+          |scss -r ./geometry_helper.rb input.scss 
+      pre.bg-near-black.pa1.f8
+        code.language-ruby
+          |# Ruby
+          |module GeometryHelper
+          |  def cos(number)
+          |    Sass::Script::Number.new(Math.cos(
+          |       number.value * Math::PI / 180
+          |    ))
+          |  end
+          |end
+      pre.bg-near-black.pa1.f8
+        code.language-scss
+          |// SCSS
+          |$red-stripe-size: cos($alpha) * $height;
+
+

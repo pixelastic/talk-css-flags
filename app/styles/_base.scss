@@ -5,8 +5,16 @@ body {
   background-color: $green;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.reveal .slides {
-  text-align: left;
+.reveal {
+  .slides {
+    text-align: left;
+  }
+  pre {
+    width: initial;
+    code {
+      padding: 0;
+    }
+  }
 }
 // *, :after, :before {
 //   box-sizing: border-box;
