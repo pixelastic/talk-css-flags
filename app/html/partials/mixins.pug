@@ -1,6 +1,6 @@
 mixin flag(code, name, additional_classes)
   - additional_classes = additional_classes || ''
-  .flex-auto.w-30.br1.oh.shadow-4.bg-light-gray.mr1.mb1.flex.flex-column.justify-center.items-stretch(class=`${additional_classes}`)
+  .flex-auto.w-30.br1.oh.shadow-4.bg-light-gray.mr1.mb1.flex.flex-column.justify-center.items-center(class=`${additional_classes}`)
     .flex-auto.pa1.flex.items-center
       .c-flag.shadow-3(class=`c-flag__${code}`)
     .flex-none.pa1.bg-white.dark-gray.b.f7.h1.flex.items-center.w-100.justify-center
