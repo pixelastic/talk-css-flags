@@ -1,0 +1,60 @@
+include ./partials/mixins.pug
+doctype html
+html(lang="en")
+  head
+    title Craftmanship, CSS and Vexillology
+    meta(name="description" content="TakeOffConf 2016")
+    meta(name="author" content="Tim Carry")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    link(rel='stylesheet', type='text/css', href='./main.css')
+    link(rel='shortcut icon', href='./favicon.ico')
+    <!--[if lt IE 9]>
+    script(src='./js/html5shiv.js')
+    <![endif]-->
+  body
+    .reveal
+      .slides.white.text
+
+        include ./slides/home.pug
+        include ./slides/who-am-i.pug
+
+        include ./slides/craftmanship.pug
+        include ./slides/companions.pug
+        include ./slides/masterpiece.pug
+
+        include ./slides/css.pug
+        include ./slides/challenge.pug
+
+        include ./slides/vexillology.pug
+        include ./slides/study-of-flags.pug
+
+        include ./slides/tricolores.pug
+        include ./slides/tricolores-variations.pug
+        include ./slides/tribandes.pug
+
+        include ./slides/comfort-zone.pug
+        include ./slides/real-flags.pug
+
+        include ./slides/more-stripes.pug
+        include ./slides/nordic-crosses.pug
+        include ./slides/diagonales.pug
+
+        include ./slides/circles.pug
+
+        include ./slides/stars.pug
+        include ./slides/symbols.pug
+        include ./slides/several-symbols.pug
+
+        include ./slides/crescents.pug
+
+        include ./slides/triangles.pug
+
+        include ./slides/commonwealth.pug
+
+  script(src='./js/head.min.js')
+  script(src='./js/reveal.js')
+  script(src='./app.js')
+  script require('app').default.init()
+

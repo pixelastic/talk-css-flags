@@ -1,2 +1,9 @@
 #!/usr/bin/env sh
-brunch watch
+
+# Listen to any change in ./app/html/ and rebuild the HTML from pug
+# if something changes...
+# ...while running the Brunch server at the same time
+# brunch watch
+parallelshell \
+  "onchange 'app/html/**/*.pug' -- npm run build:html" \
+  "brunch watch"

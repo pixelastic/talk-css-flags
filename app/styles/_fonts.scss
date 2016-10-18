@@ -1,6 +1,6 @@
 // Titles
 @font-face {
-  font-family: 'Title';
+  font-family: 'Amaranth';
   src: url('./fonts/AmaranthBold.eot');
   src: url('./fonts/AmaranthBold.eot?#iefix') format('embedded-opentype'),
        url('./fonts/AmaranthBold.woff') format('woff'),
@@ -10,17 +10,9 @@
   font-style: normal;
 }
 
-// Text
-@font-face {
-  font-family: 'Text';
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
 // Code
 @font-face {
-  font-family: 'Code';
+  font-family: 'DejaVu';
   src: url('./fonts/DejaVuSansMono.eot');
   src: url('./fonts/DejaVuSansMono.eot?#iefix') format('embedded-opentype'),
        url('./fonts/DejaVuSansMono.woff') format('woff'),

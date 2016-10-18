@@ -1,21 +1,31 @@
 @import './vendors/reveal';
+.reveal {
+  @import './vendors/tachyons';
+}
 
-@import '_variables';
-@import '_fonts';
+@import 'variables';
+@import 'fonts';
 
-@import '_base';
-@import '_layout';
+@import 'base';
 
-@import '_headings';
-@import '_code';
+.reveal {
+  @import 'utils';
+  @import 'layout';
+}
 
-@import '_navigation';
-@import '_grid';
-@import '_contact';
 
-@import '_utils';
+// @import '_fonts';
+// 
+// 
+// @import '_headings';
+// @import '_code';
+// 
+// @import '_navigation';
+// @import '_grid';
+// @import '_contact';
+// 
 @import '_custom';
-
+// 
 @import 'flags-layout';
 @import 'flag-base';
 @import 'flag-details';
