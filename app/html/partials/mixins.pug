@@ -8,7 +8,7 @@ mixin flag(code, name, additional_classes)
 
 mixin flag_fake(path, name)
   .flex-none.w-30.br1.oh.shadow-4.bg-light-gray.mr1.mb1.flex.flex-column
-    .flex-auto.pa1.flex.items-center.justify-center
+    .flex-auto.pa1.flex.items-center.justify-center(style='min-height:4rem')
       img.shadow-3.w3(src=path, alt=`Flag of ${name}`)
     .flex-none.pa1.bg-white.dark-gray.b.f7.h1.flex.items-center.w-100.justify-center
       = name
