@@ -13,6 +13,13 @@ body {
   .slides {
     text-align: left;
   }
+  .progress {
+    height: .5rem;
+    span {
+      height: .5rem;
+      background: #E9EEDE;
+    }
+  }
   pre {
     width: initial;
     code {
