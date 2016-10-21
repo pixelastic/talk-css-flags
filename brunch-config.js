@@ -1,9 +1,13 @@
 module.exports = {
   paths: {
-    watched: ['app/assets', 'app/styles/', 'app/app.js']
+    watched: ['app/assets', 'app/styles/', 'app/javascripts/']
   },
   files: {
-    javascripts: {joinTo: 'app.js'},
+    javascripts: {
+      joinTo: {
+        'app.js': /^app\/javascripts\//
+      }
+    },
     stylesheets: {joinTo: 'main.css'}
   },
   plugins: {
