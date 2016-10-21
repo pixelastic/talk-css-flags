@@ -15,7 +15,6 @@
     "build": "./scripts/build",
     "build:html": "./scripts/build_html",
     "deploy": "./scripts/deploy",
-    "lint": "./scripts/lint",
     "serve": "./scripts/serve"
   },
   "devDependencies": {
@@ -23,7 +22,6 @@
     "babel": "^5.8.29",
     "babel-brunch": "^6.0.2",
     "babel-core": "^5.8.29",
-    "babel-eslint": "^4.1.6",
     "babel-preset-es2015": "6.3.13",
     "brunch": "2.4.2",
     "eslint": "^1.10.3",

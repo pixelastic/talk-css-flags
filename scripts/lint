@@ -1,2 +1,0 @@
-#!/usr/bin/env sh
-eslint ./app/app.js
