@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+set -e
+
+# We generate the file in a directory that is not watched for livereload and
+# only move the file once it's finished writing. That way we avoid triggering
+# a reload with a file that is not completly here
+
+mkdir -p ./tmp
+pug ./app/html/index.pug -P -O ./data.json -o ./tmp
+mv -f ./tmp/index.html ./app/assets/index.html

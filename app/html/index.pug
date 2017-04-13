@@ -1,34 +1,12 @@
-include ./partials/mixins.pug
+include ./partials/mixins
 doctype html
 html(lang="en")
-  head
-    title Craftmanship, CSS and Vexillology
-    meta(name="description" content="Craftmanship, CSS and Vexillology")
-    meta(name="author" content="Tim Carry")
-    meta(name="apple-mobile-web-app-capable" content="yes")
-    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
-    meta(name="twitter:creator" content="@pixelastic")
-    meta(property="og:url" content="http://talks.pixelastic.com/slides/css-flags-takeoffconf/")
-    meta(name="description" content="Craftmanship, CSS and Vexillology")
-    meta(name="twitter:description" content="Craftmanship, CSS and Vexillology")
-    meta(property="og:description" content="Craftmanship, CSS and Vexillology")
-    meta(name="twitter:site" content="Craftmanship, CSS and Vexillology")
-    meta(property="og:title" content="Craftmanship, CSS and Vexillology")
-    meta(property="og:site_name" content="Craftmanship, CSS and Vexillology")
-    meta(name="twitter:card" content="summary_large_image")
-    meta(name="twitter:image" content="http://talks.pixelastic.com/slides/css-flags-takeoffconf/img/opengraph.png")
-    meta(property="og:image" content="http://talks.pixelastic.com/slides/css-flags-takeoffconf/img/opengraph.png")
-    link(rel='stylesheet', type='text/css', href='./main.css')
-    link(rel='shortcut icon', href='./favicon.ico')
-    <!--[if lt IE 9]>
-    script(src='./js/html5shiv.js')
-    <![endif]-->
+  include ./partials/header
   body
     .reveal
-      a.fixed.top-0.right-1.mt1.z-5.link.white.text-shadow.amaranth.f8(target="_blank", href="https://pixelastic.github.io/css-flags/")
+      a.fixed.top0.right-1.mt1.z-5.link.white.text-shadow.code.f8(target="_blank", href="https://pixelastic.github.io/css-flags/")
         |https://pixelastic.github.io/css-flags/
-      .slides.white.text
+      .slides.white.tl
 
         include ./slides/home.pug
         include ./slides/who-am-i.pug
@@ -84,8 +62,4 @@ html(lang="en")
         include ./slides/conclusion.pug
         include ./slides/questions.pug
 
-  script(src='./js/head.min.js')
-  script(src='./js/reveal.js')
-  script(src='./app.js')
-  script require('javascripts/app').default.init()
-
+  include ./partials/footer

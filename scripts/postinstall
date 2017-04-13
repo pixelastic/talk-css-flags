@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+mkdir -p ./app/assets/js/vendors
+mkdir -p ./app/styles/vendors
+
+## Reveal.js
+cp ./node_modules/reveal.js/js/reveal.js ./app/assets/js/vendors/reveal.js
+cp ./node_modules/reveal.js/css/reveal.scss ./app/styles/vendors/_reveal.scss
+cp ./node_modules/reveal.js/lib/js/classList.js ./app/assets/js/vendors/classList.js
+cp ./node_modules/reveal.js/lib/js/head.min.js ./app/assets/js/vendors/head.js
+
+## Prism.js
+cp ./node_modules/prismjs/prism.js ./app/assets/js/vendors/prism.js
+
+
+## Tachyons
+cp ./node_modules/tachyons/css/tachyons.css ./app/styles/vendors/_tachyons.css
+
+## jQuery
+cp ./node_modules/jquery/dist/jquery.min.js ./app/assets/js/vendors/jquery.js

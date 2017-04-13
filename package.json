@@ -1,33 +1,34 @@
 {
   "name": "talk-css-flags",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CSS, Compagnonnage et Vexillogie",
-  "author": "Tim \"pixelastic\" Carry",
+  "author": "Pixelastic <tim@pixelastic.com>",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com:pixelastic/talk-css-flags.git"
-  },
-  "bugs": {
-    "url": "https://github.com/pixelastic/talk-css-flags/issues"
-  },
+  "license": "MIT",
+  "repository": "git@github.com:algolia/slidedeck-html.git",
   "scripts": {
+    "serve": "./scripts/serve",
     "build": "./scripts/build",
-    "build:html": "./scripts/build_html",
-    "deploy": "./scripts/deploy",
-    "serve": "./scripts/serve"
+    "build:html": "./scripts/build-html",
+    "postinstall": "./scripts/postinstall",
+    "deploy": "./scripts/deploy"
   },
   "devDependencies": {
-    "auto-reload-brunch": "2.0.0",
-    "babel": "^5.8.29",
-    "babel-brunch": "^6.0.2",
-    "babel-core": "^5.8.29",
-    "babel-preset-es2015": "6.3.13",
-    "brunch": "2.4.2",
-    "onchange": "2.0.0",
-    "parallelshell": "2.0.0",
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "~6.0",
+    "babel-preset-env": "^1.3.2",
+    "brunch": "^2.10.9",
+    "clean-css-brunch": "^2",
+    "onchange": "^3.2.1",
+    "parallelshell": "^2.0.0",
     "pug-cli": "^1.0.0-alpha6",
-    "sass-brunch": "2.0.0"
+    "sass-brunch": "^2.10.4",
+    "tachyons": "^4.7.0",
+    "uglify-js-brunch": "^2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "prismjs": "^1.6.0",
+    "reveal.js": "^3.4.1"
+  }
 }

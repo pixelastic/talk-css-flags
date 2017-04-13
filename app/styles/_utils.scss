@@ -1,25 +1,69 @@
-// Fonts
+// ABSOLUTE POSITIONNING
+.top-3    { top:    4rem; }
+.right-3  { right:  4rem; }
+.bottom-3 { bottom: 4rem; }
+.left-3   { left:   4rem; }
+
+.top-4    { top:    8rem; }
+.right-4  { right:  8rem; }
+.bottom-4 { bottom: 8rem; }
+.left-4   { left:   8rem; }
+
+.top-5    { top:    16rem; }
+.right-5  { right:  16rem; }
+.bottom-5 { bottom: 16rem; }
+.left-5   { left:   16rem; }
+
+// DIMENSIONS
+.w-initial { width: initial }
+.mw-33 { max-width: 33%; }
+.mw1 { max-width: 1rem; }
+.mw2 { max-width: 2rem; }
+.mw3 { max-width: 4rem; }
+.mw4 { max-width: 8rem; }
+.mw5 { max-width: 16rem; }
+
+// FLEXBOX
+.fl, .flex { display: flex; }
+// Auto / None
+.fla, .flex-auto { flex:1 1 auto; min-width:0; min-height:0; }
+.fln, .flex-none  { flex: none; }
+// Grow / Shrink
+.flg, .flex-grow { flex-grow: 1; }
+.flng, .flex-nogrow { flex-grow: 0; }
+.fls, .flex-shrink { flex-shrink: 1; }
+.flns, .flex-noshrink { flex-shrink: 0; }
+// Row / Column
+.flrw, .flex-row-wrap { display: flex; flex-direction: row; flex-wrap: wrap; }
+.flrnw, .flex-row-nowrap { display: flex; flex-direction: row; }
+.flcw, .flex-column-wrap { display: flex; flex-direction: column; flex-wrap: wrap; }
+.flcnw, .flex-column-nowrap { display: flex; flex-direction: column; }
+// Center
+.flch, .flex-center-horizontal { display: flex; align-items: center }
+.flcv, .flex-center-vertical { display: flex; justify-content: center }
+.flc, .flex-center { display: flex; align-items: center; justify-content: center; }
+
+// FONTS
 .amaranth { font-family: 'Amaranth'; }
 .text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 .dejavu { font-family: 'DejaVu'; }
 .symbols { font-family: 'Symbols'; }
-// Text shadow
-.text-shadow { text-shadow: 2px 2px #313131; }
-// Flexbox
-.flex-nogrow { flex-grow: 0; }
-.flex-grow { flex-grow: 1; }
-.flex-noshrink { flex-shrink: 0; }
-.flex-shrink { flex-shrink: 1; }
-.flex-row-wrap { display: flex; flex-direction: row; flex-wrap: wrap; }
-.flex-row-nowrap { display: flex; flex-direction: row; }
-.flex-column-wrap { display: flex; flex-direction: column; flex-wrap: wrap}
-.flex-column-nowrap { display: flex; flex-direction: column; }
-// List
-.list-inside { list-style-position: inside }
-// Overflow
-.oh { overflow: hidden; }
-// Font-size
+
+// FONT—SIZES
 .f7 { font-size: .65rem; }
 .f8 { font-size: .5rem; }
-// Width
-.w-initial { width: initial }
+
+// LISTS
+.list-inside { list-style-position: inside }
+
+// OVERFLOW
+.oh { overflow: hidden; }
+
+// MARGINS
+.mta { margin-top: auto; }
+.mra { margin-right: auto; }
+.mba { margin-bottom: auto; }
+.mla { margin-left: auto; }
+
+// TEXT SHADOW
+.text-shadow { text-shadow: 2px 2px #313131; }

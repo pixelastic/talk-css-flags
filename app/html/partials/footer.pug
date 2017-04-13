@@ -1,0 +1,8 @@
+script(src='./js/vendors/head.js')
+script(src='./js/vendors/reveal.js')
+script(src='./js/vendors/lodash.js')
+script(src='./js/vendors/jquery.js')
+if process.env.BRUNCH_ENV === 'dev'
+  script(src='./vendor.js')
+script(src='./app.js')
+script require('javascripts/app').default.init()

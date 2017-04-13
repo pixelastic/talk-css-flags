@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-pug ./app/html/index.pug -o ./app/assets/
