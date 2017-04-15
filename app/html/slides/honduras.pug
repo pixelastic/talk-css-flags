@@ -1,30 +1,22 @@
 section
-  .flex.flex-row.flex-nowrap
-    .flex-auto.mr2.lh-copy.justify-center.items-center
-      pre.bg-near-black.pa2.f8
-        code.language-scss
-         |background-image:
-         |  linear-gradient(180deg, 
-         |    blue 0%,       blue 33.33%, 
-         |    white 33.33%,  white 66.66%, 
-         |    blue 66.66%,   blue 100%
-         |  )
-      pre.bg-near-black.pa2.f8
-        code.language-scss
-          |&:before  {
-          |  content: "★";
-          |  color: blue;
-          |  top: 48px;
-          |  left: 103px;
-          |  text-shadow:
-          |      36px  9px 0px blue, 
-          |      36px -9px 0px blue, 
-          |     -36px  9px 0px blue, 
-          |     -36px -9px 0px blue;
-          |}
-    .flex-auto.w-33.flex.items-center
-      +flag('hnd', 'Honduras')
+  .h-100.pv3.ph3.flcnw
+    h3.f3.fln.amaranth.text-shadow.mb2 Honduras
+    .fla.flc
+      .flrnw.flc
+        .fla.mr3
+          pre.bg-near-black.pa2.f8.lh-copy
+            code.language-scss
+              |&:before  {
+              |  content: "★";
+              |  color: blue;
+              |  top: 48px;
+              |  left: 103px;
+              |  text-shadow:
+              |      36px  9px 0px blue, 
+              |      36px -9px 0px blue, 
+              |     -36px  9px 0px blue, 
+              |     -36px -9px 0px blue;
+              |}
+        .fla.flc
+          +flag('hnd', 'Honduras', 'w4')
   
-
-
-

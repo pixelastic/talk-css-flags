@@ -1,3 +1,6 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
 html {
   font-size: 48px;
 }
@@ -6,10 +9,16 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-// .reveal {
-//   .slides {
-//     text-align: left;
-//   }
+.reveal {
+  .c-flag {
+    font-size: 26.5px;
+    line-height: 1;
+    position: relative;
+    &:before, &:after {
+      font-family: 'Symbols'
+    }
+  }
+}
 //   /**
 //    * 1. Revert Reveal styling
 //    **/
@@ -37,13 +46,3 @@ body {
 //       padding: 0;
 //     }
 //   }
-//   // Make sure the font-size for the flags are correct
-//   .c-flag {
-//     font-size: 26.5px;
-//     line-height: 1;
-//     position: relative;
-//     &:before, &:after {
-//       font-family: 'Symbols'
-//     }
-//   }
-// }

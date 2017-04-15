@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "prismjs": "^1.6.0",
     "reveal.js": "^3.4.1"
   }
 }

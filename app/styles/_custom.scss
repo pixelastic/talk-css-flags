@@ -1,0 +1,58 @@
+.gradient-example-step1 {
+  background-image: linear-gradient(90deg, #00AEFF, #8E43E7);
+}
+.gradient-example-step2 {
+  background-image: linear-gradient(90deg, 
+                                    #00AEFF 0%, #8E43E7 50%,
+                                    #f02b2b 50%, #ffc003 100%);
+}
+.gradient-example-step3 {
+  background-image: linear-gradient(90deg, 
+                                    #00AEFF 0%, #00AEFF 50%,
+                                    #f02b2b 50%, #F02B2B 100%);
+}
+
+.crescent-example-step1 {
+  background-image: 
+    radial-gradient(circle at 60% 50%, #00AEFF 2rem, transparent 2rem),
+    radial-gradient(circle at 40% 50%, #F02B2B 2rem, transparent 2rem);
+}
+
+.clip-path-example {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+// .norway-example-step1 {
+//   width: 220px;
+//   height: 160px;
+//   background-color: #ED2939;
+//   background-image: linear-gradient(180deg, 
+//                                     transparent, transparent 70px, 
+//                                     #002664 70px, #002664 90px, 
+//                                     transparent 90px, transparent 100%),
+//                     linear-gradient(90deg, 
+//                                     transparent, transparent 60px, 
+//                                     #002664 60px, #002664 80px, 
+//                                     transparent 80px, transparent 100%);
+// }
+// .norway-example-step2 {
+//   width: 220px;
+//   height: 160px;
+//   background-color: #ED2939;
+//   background-image: linear-gradient(180deg, 
+//                                     transparent, transparent 70px, 
+//                                     #002664 70px, #002664 90px, 
+//                                     transparent 90px, transparent 100%),
+//                     linear-gradient(90deg, 
+//                                     transparent, transparent 60px, 
+//                                     #002664 60px, #002664 80px, 
+//                                     transparent 80px, transparent 100%),
+//                     linear-gradient(180deg, 
+//                                     transparent, transparent 60px, 
+//                                     #FFF 60px, #FFF 100px, 
+//                                     transparent 100px, transparent 100%),
+//                     linear-gradient(90deg, 
+//                                     transparent, transparent 50px, 
+//                                     #FFF 50px, #FFF 90px, 
+//                                     transparent 90px, transparent 100%)
+// }

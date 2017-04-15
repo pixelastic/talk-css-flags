@@ -42,6 +42,8 @@
 .flch, .flex-center-horizontal { display: flex; align-items: center }
 .flcv, .flex-center-vertical { display: flex; justify-content: center }
 .flc, .flex-center { display: flex; align-items: center; justify-content: center; }
+// Spacing
+.flspa, .flex-space-around { justify-content: space-around; align-content: space-around; }
 
 // FONTS
 .amaranth { font-family: 'Amaranth'; }
@@ -50,8 +52,14 @@
 .symbols { font-family: 'Symbols'; }
 
 // FONT—SIZES
+.f0 { font-size: 0; }
 .f7 { font-size: .65rem; }
 .f8 { font-size: .5rem; }
+.f9 { font-size: .3rem; }
+
+// GRADIENTS
+
+.bg-gradient-instantsearch { background-image: linear-gradient(to bottom right, #00AEFF, #8E43E7); }
 
 // LISTS
 .list-inside { list-style-position: inside }
@@ -64,6 +72,19 @@
 .mra { margin-right: auto; }
 .mba { margin-bottom: auto; }
 .mla { margin-left: auto; }
+
+// SCALING
+.scale-10 { transform: scale(.1) }
+.scale-20 { transform: scale(.2) }
+.scale-25 { transform: scale(.25) }
+.scale-30 { transform: scale(.3) }
+.scale-40 { transform: scale(.4) }
+.scale-50 { transform: scale(.5) }
+.scale-60 { transform: scale(.6) }
+.scale-70 { transform: scale(.7) }
+.scale-75 { transform: scale(.75) }
+.scale-80 { transform: scale(.8) }
+.scale-90 { transform: scale(.9) }
 
 // TEXT SHADOW
 .text-shadow { text-shadow: 2px 2px #313131; }

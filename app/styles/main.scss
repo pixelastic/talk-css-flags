@@ -7,6 +7,8 @@
 .reveal {
   @import './vendors/_tachyons';
   @import './_utils';
+  @import './_custom';
+  @import './_mexico';
   @import './_code';
   @import './_contact';
   @import './_flag-details';

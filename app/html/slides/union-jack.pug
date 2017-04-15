@@ -1,8 +1,9 @@
 section
-  h3.amaranth.text-shadow.f2.ma0.mb2 Union Jack
-
-  .flex-row-wrap.justify-center.items-center
-    +flag_fake('./img/uk_st_andrew.svg', 'Scotland')
-    +flag_fake('./img/uk_st_patrick.svg', 'Ireland')
-    +flag_fake('./img/uk_st_george.svg', 'England')
-    +flag_fake('./img/uk.svg', 'United Kingdom')
+  .h-100.pv3.ph3.flcnw
+    h3.f3.fln.amaranth.text-shadow.mb2 Union Jack
+    .fla.flc
+      .fln.flrw.w-80.scale-90
+        +flag_fake('./img/uk_st_andrew.svg', 'Écosse', 'w-30' )
+        +flag_fake('./img/uk_st_patrick.svg', 'Irlande', 'w-30')
+        +flag_fake('./img/uk_st_george.svg', 'Angleterre', 'w-30')
+        +flag_fake('./img/uk.svg', 'Royaume-Uni')

@@ -1,18 +1,19 @@
 mixin flag(code, name, additional_classes)
+  +flag_wrapper(name, additional_classes)
+    .c-flag.shadow-3(class=`c-flag__${code}`)
+
+mixin flag_wrapper(name, additional_classes)
   - additional_classes = additional_classes || ''
-  .flex-auto.w-30.br1.oh.shadow-4.bg-light-gray.mr1.mb1.flex.flex-column.justify-center.items-center(class=`${additional_classes}`)
-    .flex-auto.pa1.flex.items-center
-      .c-flag.shadow-3(class=`c-flag__${code}`)
-    .flex-none.pa1.bg-white.dark-gray.b.f7.h1.flex.items-center.w-100.justify-center
+  .fla.flcnw.br1.oh.shadow-4.bg-light-gray.ma1(class=`${additional_classes}`)
+    .fla.flc.pa1
+      block
+    .fln.pa1.bg-white.dark-gray.b.f7.h1.flc.w-100
       = name
 
-mixin flag_fake(path, name)
-  .flex-none.w-30.br1.oh.shadow-4.bg-light-gray.mr1.mb1.flex.flex-column
-    .flex-auto.pa1.flex.items-center.justify-center(style='min-height:4rem')
-      img.shadow-3.w3(src=path, alt=`Flag of ${name}`)
-    .flex-none.pa1.bg-white.dark-gray.b.f7.h1.flex.items-center.w-100.justify-center
-      = name
+mixin flag_fake(path, name, additional_classes)
+  +flag_wrapper(name, additional_classes)
+    img.shadow-3.w3(src=path, alt=`Flag of ${name}`)
     
 mixin custom_font(symbol)
-  .flex-none.tc.w1.white!=symbol
+  .fln.tc.w1.mr1.mb1.white!=symbol
   

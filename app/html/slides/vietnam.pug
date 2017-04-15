@@ -1,23 +1,23 @@
 section
-  .flex.flex-row.flex-nowrap
-    .flex-auto.mr2.lh-copy.justify-center.items-center
-      pre.bg-near-black.pa2.f8
-        code.language-scss
-         |background: red;
-      pre.bg-near-black.pa2.f8
-        code.language-scss
-         |&:before {
-         |  // BLACK STAR (U+2605)
-         |  content: "★";
-         |  color: yellow;
-         |  position: absolute;
-         |  top: 30px;
-         |  left: 66px;
-         |  font-size: 88px;
-         |  line-height: 88px;
-         |}
-    .flex-auto.w-33.flex.items-center
-      +flag('vnm', 'Vietnam')
+  .h-100.pv3.ph3.flcnw
+    h3.f3.fln.amaranth.text-shadow.mb2 Viêt Nam
+    .fla.flc
+      .flrnw.flc
+        .fla.mr3
+          pre.bg-near-black.pa2.f8.lh-copy
+            code.language-scss
+             |&:before {
+             |  // BLACK STAR (U+2605)
+             |  content: "★";
+             |  color: yellow;
+             |  position: absolute;
+             |  top: 30px;
+             |  left: 66px;
+             |  font-size: 88px;
+             |  line-height: 88px;
+             |}
+        .fla.flc
+          +flag('vnm', 'Viêt Nam', 'w4')
   
 
 

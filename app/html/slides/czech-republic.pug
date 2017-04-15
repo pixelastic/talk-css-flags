@@ -1,28 +1,21 @@
 section
-  .flex.flex-row.flex-nowrap
-    .flex-auto.mr2.lh-copy.justify-center.items-center
-      pre.bg-near-black.pa2.f8
-        code.language-scss
-          |background-image: 
-          |  linear-gradient(
-          |    180deg, 
-          |    white 0, white 50%, 
-          |    red 50%, red 100%
-          |  );
-      pre.bg-near-black.pa2.f8
-        code.language-scss
-          |&:before {
-          |  display: block;
-          |  width: 110px;
-          |  height: 147px;
-          |  background-color: blue;
-          |  clip-path: polygon(0 0, 
-          |    100% 50%, 
-          |    0 100%
-          |  );
-          |}
-
-    .flex-auto.w-33.flex.items-center
-      +flag('cze', 'Czech Republic')
-  
+  .h-100.pv3.ph3.flcnw
+    h3.f3.fln.amaranth.text-shadow.mb2 République Tchèque
+    .fla.flc
+      .flrnw.flc
+        .fla.mr3
+          pre.bg-near-black.pa2.f8.lh-copy
+            code.language-scss
+              |&:before {
+              |  display: block;
+              |  width: 110px;
+              |  height: 147px;
+              |  background-color: blue;
+              |  clip-path: polygon(0 0, 
+              |    100% 50%, 
+              |    0 100%
+              |  );
+              |}
+        .fla.flc
+          +flag('cze', 'République Tchèque', 'w4')
 
