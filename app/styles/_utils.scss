@@ -62,8 +62,8 @@
 .f8 { font-size: .5rem; }
 
 // GRADIENTS
-.bg-gradient-primary { background-image: linear-gradient(to bottom right, $algolia-blue, $royal-blue); }
-.bg-gradient-instantsearch { background-image: linear-gradient(to bottom right, $algolia-blue, $purple-heart); }
+.bg-gradient-primary { background-image: gradient-primary(); }
+.bg-gradient-instantsearch { background-image: gradient-instantsearch(); }
 
 // LISTS
 .list-inside { list-style-position: inside }

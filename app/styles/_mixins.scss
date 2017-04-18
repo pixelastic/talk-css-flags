@@ -1,0 +1,12 @@
+@function gradient-primary() {
+  @return linear-gradient(to bottom right, $algolia-blue, $royal-blue);
+}
+@function gradient-instantsearch() {
+  @return linear-gradient(to bottom right, $algolia-blue, $purple-heart);
+}
+@function gradient-dark() {
+  @return linear-gradient(to bottom right, #3E366A, #1F1A37);
+}
+@function gradient-css() {
+  @return linear-gradient(to bottom right, #4b2e91, #3369e6);
+}
