@@ -12,6 +12,44 @@
                                     #f02b2b 50%, #F02B2B 100%);
 }
 
+.text-shadow-example-step1 {
+  text-shadow: .1rem .1rem .5rem black;
+}
+.text-shadow-example-step2 {
+  text-shadow: 
+    5rem -3rem .2rem $red,
+    -8rem -2rem .8rem white,
+    9rem 2rem .8rem yellow
+  ;
+}
+.text-shadow-example-step3 {
+  text-shadow: 
+    5rem -3rem 0 white,
+    -8rem -2rem 0 white,
+    9rem 2rem 0 white
+  ;
+}
+
+.box-shadow-example-step1 {
+  width: 3rem;
+  height: 3rem;
+  background: $radical-red;
+  box-shadow: 
+    .1rem .1rem .6rem black,
+    -10rem 1rem 0px $titan-white,
+    11rem 2rem 0px $purple-heart,
+    6rem -1rem 0px $koromiko;
+}
+.box-shadow-example-step2 {
+  width: 3rem;
+  height: 3rem;
+  background: $radical-red;
+  box-shadow: 
+    8rem 4rem 0px $titan-white,
+    11rem 4rem 0px $purple-heart,
+    11rem 1rem 0px $koromiko;
+}
+
 .crescent-example-step1 {
   background-image: 
     radial-gradient(circle at 60% 50%, #00AEFF 2rem, transparent 2rem),
@@ -22,37 +60,10 @@
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 
-// .norway-example-step1 {
-//   width: 220px;
-//   height: 160px;
-//   background-color: #ED2939;
-//   background-image: linear-gradient(180deg, 
-//                                     transparent, transparent 70px, 
-//                                     #002664 70px, #002664 90px, 
-//                                     transparent 90px, transparent 100%),
-//                     linear-gradient(90deg, 
-//                                     transparent, transparent 60px, 
-//                                     #002664 60px, #002664 80px, 
-//                                     transparent 80px, transparent 100%);
-// }
-// .norway-example-step2 {
-//   width: 220px;
-//   height: 160px;
-//   background-color: #ED2939;
-//   background-image: linear-gradient(180deg, 
-//                                     transparent, transparent 70px, 
-//                                     #002664 70px, #002664 90px, 
-//                                     transparent 90px, transparent 100%),
-//                     linear-gradient(90deg, 
-//                                     transparent, transparent 60px, 
-//                                     #002664 60px, #002664 80px, 
-//                                     transparent 80px, transparent 100%),
-//                     linear-gradient(180deg, 
-//                                     transparent, transparent 60px, 
-//                                     #FFF 60px, #FFF 100px, 
-//                                     transparent 100px, transparent 100%),
-//                     linear-gradient(90deg, 
-//                                     transparent, transparent 50px, 
-//                                     #FFF 50px, #FFF 90px, 
-//                                     transparent 90px, transparent 100%)
-// }
+.api-client {
+  background-image: url(./img/triangle-background.svg), linear-gradient(291deg, #1f1a37, #3e366a);
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: center center, top left;
+  background-blend-mode: overlay;
+}
