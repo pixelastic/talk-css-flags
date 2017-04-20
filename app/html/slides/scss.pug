@@ -1,0 +1,24 @@
+section
+  .h-100.pv3.ph3.flcnw
+    h3.f3.fln.amaranth.text-shadow.mb2 SCSS
+    .fla.flc
+      .flrnw.flc
+        .fla.flcnw
+          pre.bg-near-black.pa1.f8.mb1.lh-copy
+            code.language-bash
+              |# Shell
+              |scss -r ./geometry_helper.rb input.scss 
+          pre.bg-near-black.pa1.f8.mb1
+            code.language-ruby.lh-copy
+              |# Ruby
+              |module GeometryHelper
+              |  def cos(number)
+              |    Sass::Script::Number.new(Math.cos(
+              |       number.value * Math::PI / 180
+              |    ))
+              |  end
+              |end
+          pre.bg-near-black.pa1.f8.lh-copy
+            code.language-scss
+              |// SCSS
+              |$red-stripe-size: cos($alpha) * $height;
