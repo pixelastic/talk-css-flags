@@ -12,7 +12,7 @@ rsync \
   --prune-empty-dirs \
   --compress \
   ./public/* \
-  pixelastic:/var/www/pixelastic.com/talks.pixelastic.com/slides/css-flags-mixit/
+  pixelastic:/var/www/talks.pixelastic.com/slides/css-flags-mixit/
 
 echo "Deployed on http://talks.pixelastic.com/slides/css-flags-mixit/"
 
